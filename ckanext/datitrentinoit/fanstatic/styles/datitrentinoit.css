@@ -1,9 +1,3 @@
-/*---------------------------------------------------
-    LESS Elements 0.9
-  ---------------------------------------------------
-    A set of useful LESS mixins
-    More info at: http://lesselements.com
-  ---------------------------------------------------*/
 .masthead {
   padding-top: 10px;
   padding-bottom: 30px;
@@ -71,26 +65,6 @@
   font-size: 24px;
   margin: 0;
 }
-.home-primary-text,
-.home-search {
-  padding-top: 200px;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-.home-primary-text {
-  background-image: url(../images/visualise.jpg);
-}
-.home-search {
-  background-image: url(../images/search.jpg);
-}
-.home-primary-text p,
-.home-search p {
-  padding: 0 60px;
-}
-.hero .search-giant input {
-  padding: 11px 10px;
-  width: 220px;
-}
 .hero-secondary {
   height: 50px;
   padding: 0 10px;
@@ -117,167 +91,6 @@
 }
 .main.homepage {
   padding: 0 0 20px 0;
-}
-.main.homepage .tags.box {
-  margin: -1px 0 20px 0;
-  padding: 13px 20px;
-  height: 24px;
-  -webkit-border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-top-left-radius: 0;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  -moz-background-clip: padding-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-.main.homepage .tags h3 {
-  float: left;
-  font-size: 15px;
-  line-height: 24px;
-  margin: 0 10px 0 0;
-}
-.main.homepage .tags ul,
-.tags ul.tag-list {
-  list-style: none;
-}
-.main.homepage .tags ul {
-  margin: 0;
-  padding: 0;
-}
-.tags ul.tag-list {
-  padding: 15px;
-}
-.main.homepage .tags ul li,
-.tags ul.tag-list li,
-.main.homepage .tags ul a.tag,
-.tags ul.tag-list a.tag {
-  height: 24px;
-  line-height: 24px;
-  position: relative;
-  font-size: 12px;
-}
-.main.homepage .tags ul a.tag,
-.tags ul.tag-list a.tag {
-  margin-left: 10px;
-  padding: 0 10px 0 12px;
-  color: #fff;
-  text-decoration: none;
-  background: #005D7A;
-  border: none;
-  -webkit-border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 4px;
-  -webkit-border-top-left-radius: 4px;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 4px;
-  -moz-border-radius-topleft: 4px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 4px;
-  border-top-left-radius: 4px;
-  -moz-background-clip: padding-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-.main.homepage .tags ul li,
-.main.homepage .tags ul a.tag {
-  float: left;
-}
-.main.homepage .tags ul a.tag {
-  margin-left: 22px;
-}
-.main.homepage .tags ul li:first-of-type a.tag,
-.tags ul.tag-list li:first-of-type a.tag {
-  margin-left: 0;
-}
-.main.homepage .tags ul a.tag:before,
-.tags ul.tag-list a.tag:before {
-  float: right;
-  position: absolute;
-  top: 0;
-  right: -12px;
-  width: 0;
-  height: 0;
-  content: "";
-  border-color: #005d7a;
-  /* Fallback for IE8 */
-
-  border-color: rgba(0, 93, 122, 0);
-  border-left-color: #005d7a;
-  border-style: solid;
-  border-width: 12px 0 12px 12px;
-}
-.main.homepage .tags ul a.tag:after,
-.tags ul.tag-list a.tag:after {
-  float: right;
-  position: absolute;
-  top: 11px;
-  right: -1px;
-  width: 3px;
-  height: 3px;
-  content: "";
-  background: #fff;
-  -webkit-border-top-right-radius: 2px;
-  -webkit-border-bottom-right-radius: 2px;
-  -webkit-border-bottom-left-radius: 2px;
-  -webkit-border-top-left-radius: 2px;
-  -moz-border-radius-topright: 2px;
-  -moz-border-radius-bottomright: 2px;
-  -moz-border-radius-bottomleft: 2px;
-  -moz-border-radius-topleft: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-top-left-radius: 2px;
-  -moz-background-clip: padding-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
-}
-.main.homepage .tags ul a.tag:hover,
-.tags ul.tag-list a.tag:hover {
-  background: #0082a4;
-}
-.main.homepage .tags ul a.tag:hover:before,
-.tags ul.tag-list a.tag:hover:before {
-  border-color: #003647;
-  /* Fallback for IE8 */
-
-  border-color: rgba(0, 54, 71, 0);
-  border-left-color: #003647;
-}
-.main.homepage .tags ul li:before,
-.tags ul.tag-list li:before {
-  float: right;
-  position: absolute;
-  right: -13px;
-  top: 0px;
-  width: 0;
-  height: 0;
-  content: "";
-  border-color: #005d7a;
-  /* Fallback for IE8 */
-
-  border-color: rgba(0, 0, 0, 0);
-  border-left-color: rgba(0, 0, 0, 0);
-  /* shadow colour */
-
-  border-style: solid;
-  border-width: 12px 0 12px 12px;
 }
 .main.homepage .module:first-child .module-heading {
   -webkit-border-top-right-radius: 3px;
@@ -337,6 +150,12 @@
 .ribbon.new > * {
   background-color: #8cc68a;
 }
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
 body {
   background-color: #282828;
   background-image: none;
@@ -629,18 +448,277 @@ input[type="color"]:focus,
 .hero {
   background-color: #FFFFFF;
 }
-.hero .search-giant input {
-  border-color: #fe9131;
+.main.homepage .tags ul,
+.tags ul.tag-list {
+  background-color: #ffffff;
 }
-.hero .search-giant input:focus {
-  border-color: #fd5209;
+.main.homepage .tags ul a.tag,
+.tags ul.tag-list a.tag {
+  background: #FFF;
+  color: #3d3d3d;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+.main.homepage .tags ul a.tag:before,
+.tags ul.tag-list a.tag:before {
+  border-color: #ffffff;
+  /* Fallback for IE8 */
+
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #ffffff;
+}
+.main.homepage .tags ul a.tag:hover,
+.tags ul.tag-list a.tag:hover {
+  background: #3d3d3d;
+  color: #ffffff;
+}
+.main.homepage .tags ul a.tag:hover:before,
+.tags ul.tag-list a.tag:hover:before {
+  border-color: #3d3d3d;
+  /* Fallback for IE8 */
+
+  border-color: rgba(61, 61, 61, 0);
+  border-left-color: #3d3d3d;
+}
+.main.homepage .tags ul li:before,
+.tags ul.tag-list li:before {
+  border-color: #ffffff;
+  /* Fallback for IE8 */
+
+  border-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0.1);
+  /* shadow colour */
+
+}
+.main.homepage .tags ul a.tag {
+  background-color: #EEEEEE;
+}
+.main.homepage .tags ul a.tag:before {
+  border-left-color: #EEEEEE;
+}
+.main.homepage .tags ul a.tag:after {
+  background-color: #ffffff;
+}
+.tags ul.tag-list a.tag:after {
+  background-color: #F5F5F5;
+  /* well colour */
+
+}
+.home-slider-container {
+  padding: 20px 0 20px;
+  text-align: center;
+}
+.home-primary-text {
+  padding-top: 200px;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.home-primary-text {
+  background-image: url(../images/visualise.jpg);
+}
+.home-primary-text,
+.home-search {
+  text-align: center;
+}
+.home-primary-text p,
+.home-search p {
+  padding: 10px 60px;
+}
+.home-search {
+  background: #eee;
+  padding: 20px 0;
+}
+.hero .search-giant input {
+  width: 220px;
+  padding: 11px 10px;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 3px;
+  -webkit-border-top-left-radius: 3px;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 3px;
+  -moz-border-radius-topleft: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border-color: #888;
+}
+.hero .search-giant button {
+  padding: 11px 10px;
+  margin-top: -10px;
+}
+.main.homepage .tags.box {
+  margin: -1px 0 20px 0;
+  padding: 13px 20px;
+  height: 24px;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.main.homepage .tags h3 {
+  float: left;
+  font-size: 15px;
+  line-height: 24px;
+  margin: 0 10px 0 0;
+}
+.main.homepage .tags ul,
+.tags ul.tag-list {
+  list-style: none;
+}
+.main.homepage .tags ul {
+  margin: 0;
+  padding: 0;
+}
+.tags ul.tag-list {
+  padding: 15px;
+}
+.main.homepage .tags ul li,
+.tags ul.tag-list li,
+.main.homepage .tags ul a.tag,
+.tags ul.tag-list a.tag {
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  font-size: 12px;
+}
+.main.homepage .tags ul a.tag,
+.tags ul.tag-list a.tag {
+  margin-left: 10px;
+  padding: 0 10px 0 12px;
+  color: #fff;
+  text-decoration: none;
+  background: #005D7A;
+  border: none;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  background-color: #fff5ed;
 }
-.hero .search-giant button {
-  background-image: url(../images/icon-search-27x26.png);
+.main.homepage .tags ul li,
+.main.homepage .tags ul a.tag {
+  float: left;
+}
+.main.homepage .tags ul a.tag {
+  margin-left: 22px;
+}
+.main.homepage .tags ul li:first-of-type a.tag,
+.tags ul.tag-list li:first-of-type a.tag {
+  margin-left: 0;
+}
+.main.homepage .tags ul li:before,
+.tags ul.tag-list li:before,
+.main.homepage .tags ul a.tag:before,
+.tags ul.tag-list a.tag:before {
+  float: right;
+  position: absolute;
+  top: 0;
+  right: -12px;
+  width: 0;
+  height: 0;
+  content: "";
+  border-color: #005d7a;
+  /* Fallback for IE8 */
+
+  border-color: rgba(0, 93, 122, 0);
+  border-left-color: #005d7a;
+  border-style: solid;
+  border-width: 12px 0 12px 12px;
+}
+.main.homepage .tags ul li:after,
+.tags ul.tag-list li:after,
+.main.homepage .tags ul a.tag:after,
+.tags ul.tag-list a.tag:after {
+  float: right;
+  position: absolute;
+  top: 11px;
+  right: -1px;
+  width: 3px;
+  height: 3px;
+  content: "";
+  background: #fff;
+  -webkit-border-top-right-radius: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  -webkit-border-top-left-radius: 2px;
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomright: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  -moz-border-radius-topleft: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+}
+.main.homepage .tags ul li:hover,
+.tags ul.tag-list li:hover,
+.main.homepage .tags ul a.tag:hover,
+.tags ul.tag-list a.tag:hover {
+  background: #0082a4;
+}
+.main.homepage .tags ul li:hover:before,
+.tags ul.tag-list li:hover:before,
+.main.homepage .tags ul a.tag:hover:before,
+.tags ul.tag-list a.tag:hover:before {
+  border-color: #003647;
+  /* Fallback for IE8 */
+
+  border-color: rgba(0, 54, 71, 0);
+  border-left-color: #003647;
+}
+.main.homepage .tags ul li:before,
+.tags ul.tag-list li:before {
+  float: right;
+  position: absolute;
+  right: -13px;
+  top: 0px;
+  width: 0;
+  height: 0;
+  content: "";
+  border-color: #005d7a;
+  /* Fallback for IE8 */
+
+  border-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  /* shadow colour */
+
+  border-style: solid;
+  border-width: 12px 0 12px 12px;
 }
 .main.homepage .tags ul,
 .tags ul.tag-list {

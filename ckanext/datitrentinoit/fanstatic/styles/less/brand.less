@@ -286,21 +286,6 @@ input[type="color"]:focus,
 //----------------------------------------
 .hero {
     background-color: #FFFFFF;
-    .search-giant {
-	input {
-	    border-color:@warning;
-	}
-	input:focus {
-	    border-color: softlight(@warning, #000);
-	    -webkit-box-shadow: none;
-	    -moz-box-shadow: none;
-	    box-shadow: none;
-	    background-color: lighten(@warning, 37%);
-	}
-	button {
-	    background-image: url(../images/icon-search-27x26.png);
-	}
-    }
 }
 
 
@@ -350,4 +335,47 @@ input[type="color"]:focus,
 }
 .tags ul.tag-list a.tag:after {
     background-color: #F5F5F5; /* well colour */
+}
+
+// Homepage slider
+//----------------------------------------
+.home-slider-container {
+    padding: 20px 0 20px;
+    text-align: center;
+}
+
+.home-primary-text {
+    padding-top: 200px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.home-primary-text {
+    background-image: url(../images/visualise.jpg);
+}
+
+
+// Homepage stuff
+//----------------------------------------
+.home-primary-text,
+.home-search {
+    p { padding: 10px 60px; }
+    text-align: center;
+}
+
+.home-search {
+    background: #eee;
+    padding: 20px 0;
+}
+
+.hero .search-giant {
+    input {
+	width: 220px;
+	padding: 11px 10px;
+	.border-radius(0, 0, 3px, 3px);
+	border-color: #888;
+    }
+    button {
+	padding: 11px 10px;
+	margin-top: -10px;
+    }
 }
