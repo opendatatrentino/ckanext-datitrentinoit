@@ -1,164 +1,78 @@
 // Tags box
 //----------------------------------------
 
-.main.homepage .tags.box {
-    margin:-1px 0 20px 0;
-    padding:13px 20px;
-    height:24px;
-    .border-radius(0,0,0,0);
-}
-.main.homepage .tags h3 {
-    float:left;
-    font-size:15px;
-    line-height:24px;
-    margin:0 10px 0 0;
-}
-.main.homepage .tags ul,
-.tags ul.tag-list {
+
+@tag-bg: #eee;
+@tag-fg: #333;
+@tag-hover-bg: #333;
+@tag-hover-fg: #eee;
+
+
+.tag-list-2 {
+    margin:0;
+    padding:0;
+    position:relative;
+    right:24px;
+    bottom:-12px;
     list-style:none;
-}
-.main.homepage .tags ul {
-    margin: 0;
-    padding: 0;
-}
-.tags ul.tag-list {
-    padding: 15px;
-}
 
-.main.homepage .tags ul,
-.tags ul.tag-list {
-    li,
-    a.tag {
-	height: 24px;
-	line-height: 24px;
-	position: relative;
-	font-size: 12px;
+    li {
+	display: inline-block;
+	height:24px;
+	line-height:24px;
+	position:relative;
+	font-size:11px;
+	margin: 0 5px 5px 15px;
     }
-    a.tag {
-	margin-left:10px;
-	padding: 0 10px 0 12px;
-	color: #fff;
-	text-decoration: none;
-	background: #005D7A;
-	border:none;
-	.border-radius(0, 0, 4px, 4px);
-	.box-shadow(none);
-    }
-}
+    a.tag-item {
+	display: inline-block;
+	height:24px;
+	line-height:24px;
+	position:relative;
+	font-size:11px;
+	padding:0 10px 0 12px;
+	background:@tag-bg;
+	color:@tag-fg;
+	text-decoration:none;
+	.border-radius(4px, 4px, 0, 0);
+	//border: solid 1px #ddd;
+	.box-shadow(inset -1px -1px 0 0 #ccc);
 
-.main.homepage .tags ul {
-    li,
-    a.tag {
-	float:left;
-    }
-    a.tag {
-	margin-left:22px;
-    }
-}
-
-.main.homepage .tags ul,
-.tags ul.tag-list {
-    li:first-of-type a.tag {
-	margin-left:0;
-    }
-
-    li, a.tag {
-	&:before {
-	    float: right;
-	    position: absolute;
-	    top: 0;
-	    right: -12px;
-	    width: 0;
-	    height: 0;
-	    content: "";
-	    border-color: rgb(0,93,122); /* Fallback for IE8 */
-	    border-color: rgba(0,93,122,0);
-	    border-left-color: rgba(0,93,122,1);
-	    border-style: solid;
-	    border-width: 12px 0 12px 12px;
-	}
-	&:after {
-	    float:right;
+	&:before{
+	    content:"";
+	    float:left;
 	    position:absolute;
-	    top: 11px;
-	    right: -1px;
-	    width: 3px;
-	    height: 3px;
-	    content: "";
-	    background: #fff;
+	    top:0;
+	    left:-12px;
+	    width:0;
+	    height:0;
+	    border-color:transparent @tag-bg transparent transparent;
+	    border-style:solid;
+	    border-width:12px 12px 12px 0;
+	}
+
+	// The small circle
+	&:after{
+	    content:"";
+	    position:absolute;
+	    top:10px;
+	    left:0;
+	    float:left;
+	    width:4px;
+	    height:4px;
 	    .border-radius(2px, 2px, 2px, 2px);
-	    .box-shadow(0 0 2px rgba(0, 0, 0, 0.7));
+	    background:#fff;
+	    .box-shadow(-1px -1px 2px #888);
 	}
-	&:hover {
-	    background: @dti-blue;
-	}
-	&:hover:before {
-	    border-color: rgb(0,54,71); /* Fallback for IE8 */
-	    border-color: rgba(0,54,71,0);
-	    border-left-color: rgba(0,54,71,1);
-	}
-    }
-    li:before {
-	float:right;
-	position:absolute;
-	right: -13px;
-	top: 0px;
-	width:0;
-	height:0;
-	content:"";
-	border-color:rgb(0,93,122); /* Fallback for IE8 */
-	border-color:rgba(0, 0, 0, 0);
-	border-left-color:rgba(0, 0, 0, 0); /* shadow colour */
-	border-style:solid;
-	border-width:12px 0 12px 12px;
-    }
-}
 
-// Tags
-//----------------------------------------
-.main.homepage .tags ul,
-.tags ul.tag-list {
-    background-color: @primary-fore;
-    a.tag {
-	background:#FFF;
-	color:@primary;
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-	&:before {
-	    border-color: rgb(255,255,255); /* Fallback for IE8 */
-	    border-color: rgba(255,255,255,0);
-	    border-left-color:rgba(255,255,255,1);
+	// The hovered style
+	&:hover{
+	    color: @tag-hover-fg;
+	    background: @tag-hover-bg;
+	    .box-shadow(none);
 	}
-	&:hover {
-	    background:@primary;
-	    color:@primary-fore;
-	    &:before {
-		border-color: @primary; /* Fallback for IE8 */
-		border-color: fade(@primary, 0%);
-		border-left-color:fade(@primary, 100%);
-	    }
-	}
-    }
-    li:before {
-	border-color:rgb(255,255,255); /* Fallback for IE8 */
-	border-color:rgba(0, 0, 0, 0);
-	border-left-color:rgba(0, 0, 0, 0.1); /* shadow colour */
-    }
-}
-
-// Homepage tags
-//----------------------------------------
-.main.homepage {
-    .tags ul a.tag {
-	background-color: #EEEEEE;
-	&:before {
-	    border-left-color: #EEEEEE;
-	}
-	&:after {
-	    background-color: @primary-fore;
+	&:hover:before{
+	    border-color:transparent @tag-hover-bg transparent transparent;
 	}
     }
 }
-.tags ul.tag-list a.tag:after {
-    background-color: #F5F5F5; /* well colour */
-}
-

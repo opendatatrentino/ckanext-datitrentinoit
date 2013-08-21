@@ -289,54 +289,6 @@ input[type="color"]:focus,
 }
 
 
-// Tags
-//----------------------------------------
-.main.homepage .tags ul,
-.tags ul.tag-list {
-    background-color: @primary-fore;
-    a.tag {
-	background:#FFF;
-	color:@primary;
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-	&:before {
-	    border-color: rgb(255,255,255); /* Fallback for IE8 */
-	    border-color: rgba(255,255,255,0);
-	    border-left-color:rgba(255,255,255,1);
-	}
-	&:hover {
-	    background:@primary;
-	    color:@primary-fore;
-	    &:before {
-		border-color: @primary; /* Fallback for IE8 */
-		border-color: fade(@primary, 0%);
-		border-left-color:fade(@primary, 100%);
-	    }
-	}
-    }
-    li:before {
-	border-color:rgb(255,255,255); /* Fallback for IE8 */
-	border-color:rgba(0, 0, 0, 0);
-	border-left-color:rgba(0, 0, 0, 0.1); /* shadow colour */
-    }
-}
-
-// Homepage tags
-//----------------------------------------
-.main.homepage {
-    .tags ul a.tag {
-	background-color: #EEEEEE;
-	&:before {
-	    border-left-color: #EEEEEE;
-	}
-	&:after {
-	    background-color: @primary-fore;
-	}
-    }
-}
-.tags ul.tag-list a.tag:after {
-    background-color: #F5F5F5; /* well colour */
-}
-
 // Homepage slider
 //----------------------------------------
 .home-slider-container {
