@@ -1,0 +1,353 @@
+// dati.trentino.it - Brand css
+
+@import "contrib/elements.less";
+
+
+// HTML Elements
+//----------------------------------------
+body {
+    background-color: @secondary;
+    background-image: none;
+}
+
+a,
+.btn-link {
+    color: darken(@dti-blue, 10%);
+}
+a:hover,
+a:focus,
+.btn-link:hover,
+.btn-link:focus {
+    color: @dti-blue;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: @dti-blue;
+}
+
+
+// Dropdown menu
+//----------------------------------------
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+    .gradient(darken(@primary, 20%), darken(@primary, 20%), darken(@primary, 10%));
+}
+.dropdown-menu > .active {
+    > a,
+    > a:hover,
+    > a:focus {
+	.gradient(darken(@primary, 20%), darken(@primary, 20%), darken(@primary, 10%));
+    }
+}
+.nav-list > .active {
+    > a,
+    > a:hover,
+    > a:focus {
+	background-color: darken(@primary, 10%);
+    }
+}
+.nav-pills > .active {
+    > a,
+    > a:hover,
+    > a:focus {
+	background-color: darken(@primary, 10%);
+    }
+}
+.nav .dropdown-toggle {
+    .caret {
+	border-top-color: darken(@primary, 10%);
+	border-bottom-color: darken(@primary, 10%);
+    }
+    &:hover .caret,
+    &:focus .caret {
+	border-top-color: darken(@primary, 30%);
+	border-bottom-color: darken(@primary, 30%);
+    }
+}
+a.thumbnail:hover,
+a.thumbnail:focus {
+    border-color: darken(@primary, 10%);
+    -webkit-box-shadow: 0 1px 4px fade(@primary, 25%);
+    -moz-box-shadow: 0 1px 4px fade(@primary, 25%);
+    box-shadow: 0 1px 4px fade(@primary, 25%);
+}
+
+.editor .editor-info-block a {
+    color: darken(@primary, 10%);
+}
+
+.popover-followee .nav li a i {
+    background-color: darken(@primary, 10%);
+    -webkit-box-shadow: inset 0 1px 2 x fade(@primary, 20%);
+    -moz-box-shadow: inset 0 1px 2 x fade(@primary, 20%);
+    box-shadow: inset 0 1px 2 x fade(@primary, 20%);
+}
+
+.popover-followee .nav li.active a i {
+    color: darken(@primary, 10%);
+}
+
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: lighten(@primary, 20%);
+    box-shadow:
+        inset 0 1px 1px rgba(0,0,0,.075),
+        0 0 8px fadeout(@primary, 60%);
+    -moz-box-shadow:
+        inset 0 1px 1px rgba(0,0,0,.075),
+        0 0 8px fadeout(@primary, 60%);
+    -webkit-box-shadow:
+        inset 0 1px 1px rgba(0,0,0,.075),
+        0 0 8px fadeout(@primary, 60%);
+}
+
+
+// Buttons
+//----------------------------------------
+
+.button(@bgcolor: #000) {
+    .gradient(@bgcolor, softlight(@bgcolor, #000), @bgcolor);
+    border-color: softlight(@bgcolor, #000);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &.disabled,
+    &[disabled] {
+	//background-color: softlight(@bgcolor, #000);
+	background: softlight(@bgcolor, #000);
+    }
+}
+
+.btn-primary {
+    .button(@dti-blue);
+}
+
+.btn-info {
+    .button(@secondary);
+}
+
+.btn-success {
+    .button(@success);
+}
+
+.btn-warning {
+    .button(@warning);
+}
+
+.btn-danger {
+    .button(@danger);
+}
+
+
+// Header with links
+//----------------------------------------
+.account-masthead {
+    background-color: @dti-green;
+    background-image: none;
+
+    .account ul li {
+	border: none;
+	a {
+	    color: #fff;
+	    &:hover {
+		color: #fff;
+		background-color: darken(@dti-green, 10%);
+	    }
+	}
+    }
+    .account .notifications a span {
+	background-color: darken(@dti-green, 10%);
+    }
+}
+
+
+
+// Top header
+//----------------------------------------
+.masthead {
+    background-color: #ffffff;
+    background-image: none;
+
+    &, a { color: #333; }
+
+    .navigation {
+	background: @dti-blue;
+	a { color: #fff; }
+	border-radius: 5px;
+	padding: 0 5px;
+    }
+    .navigation .nav-pills {
+	li a {
+	    color: #fff;
+	    &:hover {
+		background-color: lighten(@dti-blue, 5%);
+	    }
+	}
+	li.active a {
+	    background-color: darken(@dti-blue, 5%);
+	}
+    }
+    input[type="text"] {
+	border-color: darken(@primary, 10%);
+	&:focus {
+	    -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+	    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+	}
+    }
+    .site-search input {
+	padding: 5px 10px;
+    }
+}
+
+
+
+// Main
+//----------------------------------------
+[role=main],
+.main {
+    background-image:none;
+    background-color:#f0f0f0;
+}
+
+.box {
+    .box-shadow(none);
+}
+
+.pill {
+    background-color: @secondary;
+    a:hover {
+	color:#FFF;
+    }
+}
+
+.nav-item.active {
+    > a,
+    > a:hover {
+	background-color: @secondary;
+    }
+    > a:before {
+	border-left-color:@secondary;
+    }
+}
+
+// Footer
+//----------------------------------------
+.site-footer {
+    background-color: @secondary;
+    background-image: none;
+
+    .navigation .nav-pills {
+	a:hover,
+	.active a {
+	    background-color: @secondary;
+	}
+    }
+
+    input[type="text"] {
+	border-color: darken(@secondary, 10%);
+    }
+
+    &,
+    label,
+    small {
+	color: fade(@secondary-fore, 60%);
+    }
+
+    a {
+	color: fade(@secondary-fore, 60%);
+    }
+}
+
+.attribution small {
+    color: fade(@secondary-fore, 60%);
+}
+
+
+// Banner
+//----------------------------------------
+.hero {
+    background-color: #FFFFFF;
+    .search-giant {
+	input {
+	    border-color:@warning;
+	}
+	input:focus {
+	    border-color: softlight(@warning, #000);
+	    -webkit-box-shadow: none;
+	    -moz-box-shadow: none;
+	    box-shadow: none;
+	    background-color: lighten(@warning, 37%);
+	}
+	button {
+	    background-image: url(../images/icon-search-27x26.png);
+	}
+    }
+}
+
+
+// Tags
+//----------------------------------------
+.main.homepage .tags ul,
+.tags ul.tag-list {
+    background-color: @primary-fore;
+    a.tag {
+	background:#FFF;
+	color:@primary;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+	&:before {
+	    border-color: rgb(255,255,255); /* Fallback for IE8 */
+	    border-color: rgba(255,255,255,0);
+	    border-left-color:rgba(255,255,255,1);
+	}
+	&:hover {
+	    background:@primary;
+	    color:@primary-fore;
+	    &:before {
+		border-color: @primary; /* Fallback for IE8 */
+		border-color: fade(@primary, 0%);
+		border-left-color:fade(@primary, 100%);
+	    }
+	}
+    }
+    li:before {
+	border-color:rgb(255,255,255); /* Fallback for IE8 */
+	border-color:rgba(0, 0, 0, 0);
+	border-left-color:rgba(0, 0, 0, 0.1); /* shadow colour */
+    }
+}
+
+// Homepage tags
+//----------------------------------------
+.main.homepage {
+    .tags ul a.tag {
+	background-color: #EEEEEE;
+	&:before {
+	    border-left-color: #EEEEEE;
+	}
+	&:after {
+	    background-color: @primary-fore;
+	}
+    }
+}
+.tags ul.tag-list a.tag:after {
+    background-color: #F5F5F5; /* well colour */
+}
