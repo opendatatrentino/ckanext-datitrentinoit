@@ -158,7 +158,7 @@ input[type="color"]:focus,
 }
 
 
-// Header with links
+// Top row with links
 //----------------------------------------
 .account-masthead {
     background-color: @dti-green;
@@ -179,11 +179,11 @@ input[type="color"]:focus,
     }
 }
 
-
-
-// Top header
+// Site header
 //----------------------------------------
 .masthead {
+    padding-top: 10px;
+    padding-bottom: 30px;
     background-color: #ffffff;
     background-image: none;
 
@@ -191,9 +191,9 @@ input[type="color"]:focus,
 
     .navigation {
 	background: @dti-blue;
-	a { color: #fff; }
 	border-radius: 5px;
 	padding: 0 5px;
+	a { color: #fff; }
     }
     .navigation .nav-pills {
 	li a {
@@ -216,7 +216,26 @@ input[type="color"]:focus,
     .site-search input {
 	padding: 5px 10px;
     }
+
+    .logo {
+	display: block;
+	margin-top: 6px;
+    }
+
+    .header-image .subtitle {
+	position: absolute;
+	left: 240px;
+	bottom: -2px;
+	font-size: 16px;
+	font-style: italic;
+	strong { color: @dti-blue; }
+    }
+
+    .site-search input[name="q"] {
+	border-color: #aaa;
+    }
 }
+
 
 
 
@@ -314,10 +333,6 @@ input[type="color"]:focus,
     text-align: center;
 }
 
-.home-search {
-    background: #eee;
-    padding: 20px 0;
-}
 
 .hero .search-giant {
     input {

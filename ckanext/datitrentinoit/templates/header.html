@@ -1,6 +1,16 @@
 {% ckan_extends %}
 
 {% block header_logo %}
-  <a class="logo" href="{{ h.url('home') }}"><img src="{{ h.url_for_static('/images/logo.png') }}" alt="{{ g.site_title }}" /></a>
-  {% if g.site_description %}<h2>{{ g.site_description }}</h2>{% endif %}
+  <a class="logo" href="{{ h.url('home') }}">
+    <img src="{{ h.url_for_static('/images/logo.png') }}" alt="{{ g.site_title }}" />
+  </a>
+
+  <div class="subtitle">
+    <strong>Dati aperti del Trentino.</strong>
+    Le informazioni che cercavi e blah blah blah.
+  </div>
+
+  {#{% if g.site_description %}
+    <h2>{{ g.site_description }}</h2>
+  {% endif %}#}
 {% endblock %}

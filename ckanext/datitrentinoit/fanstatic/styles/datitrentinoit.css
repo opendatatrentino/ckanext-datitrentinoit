@@ -4,23 +4,6 @@
     A set of useful LESS mixins
     More info at: http://lesselements.com
   ---------------------------------------------------*/
-.masthead {
-  padding-top: 10px;
-  padding-bottom: 30px;
-}
-.masthead .logo {
-  display: block;
-  margin-top: 6px;
-}
-.masthead .header-image h2 {
-  bottom: -2px;
-  font-size: 16px;
-  left: 240px;
-  font-style: italic;
-}
-.masthead .site-search input[name="q"] {
-  border-color: #aaa;
-}
 .nav-item.active > a:before {
   background-image: none;
   width: 0;
@@ -366,6 +349,8 @@ input[type="color"]:focus,
   background-color: #9aa000;
 }
 .masthead {
+  padding-top: 10px;
+  padding-bottom: 30px;
   background-color: #ffffff;
   background-image: none;
 }
@@ -399,6 +384,23 @@ input[type="color"]:focus,
 }
 .masthead .site-search input {
   padding: 5px 10px;
+}
+.masthead .logo {
+  display: block;
+  margin-top: 6px;
+}
+.masthead .header-image .subtitle {
+  position: absolute;
+  left: 240px;
+  bottom: -2px;
+  font-size: 16px;
+  font-style: italic;
+}
+.masthead .header-image .subtitle strong {
+  color: #0082a4;
+}
+.masthead .site-search input[name="q"] {
+  border-color: #aaa;
 }
 [role=main],
 .main {
@@ -467,10 +469,6 @@ input[type="color"]:focus,
 .home-primary-text p,
 .home-search p {
   padding: 10px 60px;
-}
-.home-search {
-  background: #eee;
-  padding: 20px 0;
 }
 .hero .search-giant input {
   width: 220px;
