@@ -1,3 +1,9 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
 .masthead {
   padding-top: 10px;
   padding-bottom: 30px;
@@ -6,10 +12,11 @@
   display: block;
   margin-top: 6px;
 }
-.masthead hgroup h2 {
+.masthead .header-image h2 {
   bottom: -2px;
-  font-size: 10px;
-  left: 47px;
+  font-size: 16px;
+  left: 240px;
+  font-style: italic;
 }
 .masthead .site-search input[name="q"] {
   border-color: #aaa;
@@ -330,12 +337,6 @@
 .ribbon.new > * {
   background-color: #8cc68a;
 }
-/*---------------------------------------------------
-    LESS Elements 0.9
-  ---------------------------------------------------
-    A set of useful LESS mixins
-    More info at: http://lesselements.com
-  ---------------------------------------------------*/
 body {
   background-color: #282828;
   background-image: none;
