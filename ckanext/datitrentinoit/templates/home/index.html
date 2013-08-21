@@ -17,7 +17,7 @@
 	<div class="home-box">
 	  {% block home_primary_content %}
    	    <h3>{{ _('Popular Tags') }}</h3>
-   	    {% set tags = h.get_facet_items_dict('tags', limit=8) %}
+   	    {% set tags = h.get_facet_items_dict('tags', limit=10) %}
    	    <ul class="tag-list-2">
    	      {% for tag in tags %}
    	      <li>
