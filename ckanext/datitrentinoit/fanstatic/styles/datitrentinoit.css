@@ -1,3 +1,9 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
 .masthead {
   padding-top: 10px;
   padding-bottom: 30px;
@@ -150,12 +156,6 @@
 .ribbon.new > * {
   background-color: #8cc68a;
 }
-/*---------------------------------------------------
-    LESS Elements 0.9
-  ---------------------------------------------------
-    A set of useful LESS mixins
-    More info at: http://lesselements.com
-  ---------------------------------------------------*/
 body {
   background-color: #282828;
   background-image: none;
@@ -615,4 +615,25 @@ input[type="color"]:focus,
   font-size: 15px;
   line-height: 24px;
   margin: 0 10px 0 0;
+}
+.home-box {
+  background: #eee;
+  padding: 20px;
+  border: solid 1px #ddd;
+  margin: 0 0 20px 0;
+  border-radius: 3px;
+  text-align: center;
+  height: 140px;
+}
+.home-box .tag-list-2 a.tag-item {
+  background: #fff;
+}
+.home-box .tag-list-2 a.tag-item:before {
+  border-color: transparent #fff transparent transparent;
+}
+.home-box .tag-list-2 a.tag-item:hover {
+  background: #555;
+}
+.home-box .tag-list-2 a.tag-item:hover:before {
+  border-color: transparent #555 transparent transparent;
 }
