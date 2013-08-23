@@ -1,9 +1,3 @@
-/*---------------------------------------------------
-    LESS Elements 0.9
-  ---------------------------------------------------
-    A set of useful LESS mixins
-    More info at: http://lesselements.com
-  ---------------------------------------------------*/
 .nav-item.active > a:before {
   background-image: none;
   width: 0;
@@ -61,7 +55,7 @@
   line-height: 50px;
   font-size: 19px;
   text-align: center;
-  background: #0082a4;
+  background: #23759f;
   -webkit-border-top-right-radius: 4px;
   -webkit-border-bottom-right-radius: 0;
   -webkit-border-bottom-left-radius: 0;
@@ -134,24 +128,30 @@
   transform: rotate(45deg);
 }
 .ribbon.featured > * {
-  background-color: #0082a4;
+  background-color: #23759f;
 }
 .ribbon.new > * {
   background-color: #8cc68a;
 }
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
 body {
   background-color: #282828;
   background-image: none;
 }
 a,
 .btn-link {
-  color: #005a71;
+  color: #1a5675;
 }
 a:hover,
 a:focus,
 .btn-link:hover,
 .btn-link:focus {
-  color: #0082a4;
+  color: #23759f;
 }
 h1,
 h2,
@@ -159,7 +159,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #0082a4;
+  color: #23759f;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
@@ -242,13 +242,13 @@ input[type="color"]:focus,
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(61, 61, 61, 0.4);
 }
 .btn-primary {
-  background: #0082a4;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #004269), color-stop(1, #0082a4));
-  background: -ms-linear-gradient(bottom, #004269, #0082a4);
-  background: -moz-linear-gradient(center bottom, #004269 0%, #0082a4 100%);
-  background: -o-linear-gradient(#0082a4, #004269);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0082a4', endColorstr='#004269', GradientType=0);
-  border-color: #004269;
+  background: #23759f;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #053663), color-stop(1, #23759f));
+  background: -ms-linear-gradient(bottom, #053663, #23759f);
+  background: -moz-linear-gradient(center bottom, #053663 0%, #23759f 100%);
+  background: -o-linear-gradient(#23759f, #053663);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#23759f', endColorstr='#053663', GradientType=0);
+  border-color: #053663;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 .btn-primary:hover,
@@ -257,7 +257,7 @@ input[type="color"]:focus,
 .btn-primary.active,
 .btn-primary.disabled,
 .btn-primary[disabled] {
-  background: #004269;
+  background: #053663;
 }
 .btn-info {
   background: #282828;
@@ -332,7 +332,7 @@ input[type="color"]:focus,
   background: #fd1709;
 }
 .account-masthead {
-  background-color: #cbd300;
+  background-color: #bccd00;
   background-image: none;
 }
 .account-masthead .account ul li {
@@ -343,10 +343,10 @@ input[type="color"]:focus,
 }
 .account-masthead .account ul li a:hover {
   color: #fff;
-  background-color: #9aa000;
+  background-color: #8d9a00;
 }
 .account-masthead .account .notifications a span {
-  background-color: #9aa000;
+  background-color: #8d9a00;
 }
 .masthead {
   padding-top: 10px;
@@ -359,7 +359,7 @@ input[type="color"]:focus,
   color: #333;
 }
 .masthead .navigation {
-  background: #0082a4;
+  background: #23759f;
   border-radius: 5px;
   padding: 0 5px;
 }
@@ -369,11 +369,12 @@ input[type="color"]:focus,
 .masthead .navigation .nav-pills li a {
   color: #fff;
 }
-.masthead .navigation .nav-pills li a:hover {
-  background-color: #0096be;
+.masthead .navigation .nav-pills li a:hover,
+.masthead .navigation .nav-pills li a:focus {
+  background-color: #2884b4;
 }
 .masthead .navigation .nav-pills li.active a {
-  background-color: #006e8b;
+  background-color: #1e668a;
 }
 .masthead input[type="text"] {
   border-color: #242424;
@@ -397,7 +398,7 @@ input[type="color"]:focus,
   font-style: italic;
 }
 .masthead .header-image .subtitle strong {
-  color: #0082a4;
+  color: #23759f;
 }
 .masthead .site-search input[name="q"] {
   border-color: #aaa;

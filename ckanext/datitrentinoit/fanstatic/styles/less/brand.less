@@ -162,6 +162,7 @@ input[type="color"]:focus,
 //----------------------------------------
 .account-masthead {
     background-color: @dti-green;
+    //border-bottom: solid 3px @dti-green-dark;
     background-image: none;
 
     .account ul li {
@@ -198,7 +199,7 @@ input[type="color"]:focus,
     .navigation .nav-pills {
 	li a {
 	    color: #fff;
-	    &:hover {
+	    &:hover, &:focus {
 		background-color: lighten(@dti-blue, 5%);
 	    }
 	}
