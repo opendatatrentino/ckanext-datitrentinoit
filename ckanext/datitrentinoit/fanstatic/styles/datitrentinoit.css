@@ -617,13 +617,16 @@ input[type="color"]:focus,
   margin: 0 10px 0 0;
 }
 .home-box {
-  background: #eee;
-  padding: 20px;
-  border: solid 1px #ddd;
-  margin: 0 0 20px 0;
-  border-radius: 3px;
-  text-align: center;
   height: 140px;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  text-align: center;
+  background: #eee;
+  border: solid 1px #ddd;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 1px 1px 0 #ffffff;
+  -moz-box-shadow: inset 1px 1px 0 #ffffff;
+  box-shadow: inset 1px 1px 0 #ffffff;
 }
 .home-box .tag-list-2 a.tag-item {
   background: #fff;
@@ -636,4 +639,7 @@ input[type="color"]:focus,
 }
 .home-box .tag-list-2 a.tag-item:hover:before {
   border-color: transparent #555 transparent transparent;
+}
+.home-box .tag-list-2 a.tag-item:after {
+  background: #eee;
 }

@@ -3,24 +3,27 @@
 //============================================================
 
 .main.homepage .tags.box {
-    margin:-1px 0 20px 0;
-    padding:13px 20px;
+    margin: -1px 0 20px 0;
+    padding: 13px 20px;
     .border-radius(0,0,0,0);
+
     h3 {
-	float:left;
-	font-size:15px;
-	line-height:24px;
-	margin:0 10px 0 0;
+	float: left;
+	font-size: 15px;
+	line-height: 24px;
+	margin: 0 10px 0 0;
     }
 }
+
 .home-box {
-    background: #eee;
-    padding: 20px;
-    border: solid 1px #ddd;
-    margin: 0 0 20px 0;
-    border-radius: 3px;
-    text-align: center;
     height: 140px;
+    margin: 0 0 20px 0;
+    padding: 20px;
+    text-align: center;
+    background: #eee;
+    border: solid 1px #ddd;
+    border-radius: 3px;
+    .box-shadow(inset 1px 1px 0 #fff);
 
     .tag-list-2 a.tag-item {
 	background: #fff;
@@ -33,5 +36,8 @@
     }
     .tag-list-2 a.tag-item:hover:before {
 	border-color: transparent #555 transparent transparent;
+    }
+    .tag-list-2 a.tag-item:after {
+	background: #eee;
     }
 }
