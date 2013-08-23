@@ -1,3 +1,9 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
 .nav-item.active > a:before {
   background-image: none;
   width: 0;
@@ -133,12 +139,6 @@
 .ribbon.new > * {
   background-color: #8cc68a;
 }
-/*---------------------------------------------------
-    LESS Elements 0.9
-  ---------------------------------------------------
-    A set of useful LESS mixins
-    More info at: http://lesselements.com
-  ---------------------------------------------------*/
 body {
   background-color: #282828;
   background-image: none;
@@ -536,9 +536,9 @@ input[type="color"]:focus,
   -moz-background-clip: padding-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  -webkit-box-shadow: inset -1px -1px 0 0 #cccccc;
-  -moz-box-shadow: inset -1px -1px 0 0 #cccccc;
-  box-shadow: inset -1px -1px 0 0 #cccccc;
+  -webkit-box-shadow: inset 0 0 0 1px #cccccc;
+  -moz-box-shadow: inset 0 0 0 1px #cccccc;
+  box-shadow: inset 0 0 0 1px #cccccc;
 }
 .tag-list-2 a.tag-item:before {
   content: "";
@@ -546,7 +546,7 @@ input[type="color"]:focus,
   position: absolute;
   top: 0;
   left: -12px;
-  width: 0;
+  width: 1px;
   height: 0;
   border-color: transparent #eeeeee transparent transparent;
   border-style: solid;
@@ -555,7 +555,7 @@ input[type="color"]:focus,
 .tag-list-2 a.tag-item:after {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 9px;
   left: 0;
   float: left;
   width: 4px;
@@ -575,10 +575,11 @@ input[type="color"]:focus,
   -moz-background-clip: padding-box;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  border: solid 1px #ccc;
   background: #fff;
-  -webkit-box-shadow: -1px -1px 2px #888888;
-  -moz-box-shadow: -1px -1px 2px #888888;
-  box-shadow: -1px -1px 2px #888888;
+  -webkit-box-shadow: -1px -1px 2px #dddddd;
+  -moz-box-shadow: -1px -1px 2px #dddddd;
+  box-shadow: -1px -1px 2px #dddddd;
 }
 .tag-list-2 a.tag-item:hover {
   color: #eeeeee;
