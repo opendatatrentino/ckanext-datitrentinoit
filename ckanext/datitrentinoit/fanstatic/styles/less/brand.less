@@ -21,6 +21,11 @@ a:focus,
     color: @dti-blue;
 }
 
+a, a:before, a:after {
+    transition: background-color ease .5s,
+                border-color ease .5s;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: @dti-blue;
 }
@@ -89,6 +94,9 @@ a.thumbnail:focus {
     color: darken(@primary, 10%);
 }
 
+
+// Focused form fields
+//----------------------------------------
 
 textarea:focus,
 input[type="text"]:focus,
@@ -160,15 +168,23 @@ input[type="color"]:focus,
 
 // Top row with links
 //----------------------------------------
+
 .account-masthead {
     background-color: @dti-green;
-    //border-bottom: solid 3px @dti-green-dark;
     background-image: none;
+
+//    background: #222;
+//    border-bottom: solid 5px darken(@dti-green, 10%);
+
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,.5);
 
     .account ul li {
 	border: none;
 	a {
 	    color: #fff;
+	    transition: background-color ease .5s;
+
 	    &:hover {
 		color: #fff;
 		background-color: darken(@dti-green, 10%);
@@ -199,6 +215,8 @@ input[type="color"]:focus,
     .navigation .nav-pills {
 	li a {
 	    color: #fff;
+	    transition: background-color ease .5s;
+
 	    &:hover, &:focus {
 		background-color: lighten(@dti-blue, 5%);
 	    }

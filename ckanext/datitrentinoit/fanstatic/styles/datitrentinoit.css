@@ -153,6 +153,11 @@ a:focus,
 .btn-link:focus {
   color: #23759f;
 }
+a,
+a:before,
+a:after {
+  transition: background-color ease 0.5s, border-color ease 0.5s;
+}
 h1,
 h2,
 h3,
@@ -334,12 +339,15 @@ input[type="color"]:focus,
 .account-masthead {
   background-color: #bccd00;
   background-image: none;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 .account-masthead .account ul li {
   border: none;
 }
 .account-masthead .account ul li a {
   color: #fff;
+  transition: background-color ease 0.5s;
 }
 .account-masthead .account ul li a:hover {
   color: #fff;
@@ -368,6 +376,7 @@ input[type="color"]:focus,
 }
 .masthead .navigation .nav-pills li a {
   color: #fff;
+  transition: background-color ease 0.5s;
 }
 .masthead .navigation .nav-pills li a:hover,
 .masthead .navigation .nav-pills li a:focus {
@@ -518,7 +527,7 @@ input[type="color"]:focus,
   position: relative;
   font-size: 11px;
   padding: 0 10px 0 12px;
-  background: #eeeeee;
+  background: #ffffff;
   color: #333333;
   text-decoration: none;
   -webkit-border-top-right-radius: 4px;
@@ -548,9 +557,12 @@ input[type="color"]:focus,
   left: -12px;
   width: 1px;
   height: 0;
-  border-color: transparent #eeeeee transparent transparent;
+  border-color: transparent #ffffff transparent transparent;
   border-style: solid;
   border-width: 12px 12px 12px 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 .tag-list-2 a.tag-item:after {
   content: "";
@@ -583,13 +595,16 @@ input[type="color"]:focus,
 }
 .tag-list-2 a.tag-item:hover {
   color: #eeeeee;
-  background: #333333;
+  background: #2c94c9;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 .tag-list-2 a.tag-item:hover:before {
-  border-color: transparent #333333 transparent transparent;
+  border-color: transparent #2c94c9 transparent transparent;
+}
+.tag-list-2 a.tag-item:hover:after {
+  box-shadow: none;
 }
 .main.homepage .tags.box {
   margin: -1px 0 20px 0;
@@ -627,19 +642,4 @@ input[type="color"]:focus,
   -webkit-box-shadow: inset 1px 1px 0 #ffffff;
   -moz-box-shadow: inset 1px 1px 0 #ffffff;
   box-shadow: inset 1px 1px 0 #ffffff;
-}
-.home-box .tag-list-2 a.tag-item {
-  background: #fff;
-}
-.home-box .tag-list-2 a.tag-item:before {
-  border-color: transparent #fff transparent transparent;
-}
-.home-box .tag-list-2 a.tag-item:hover {
-  background: #555;
-}
-.home-box .tag-list-2 a.tag-item:hover:before {
-  border-color: transparent #555 transparent transparent;
-}
-.home-box .tag-list-2 a.tag-item:after {
-  background: #eee;
 }
