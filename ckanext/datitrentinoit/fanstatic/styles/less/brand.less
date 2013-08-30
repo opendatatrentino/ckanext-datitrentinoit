@@ -21,7 +21,8 @@ a:focus,
     color: @dti-blue;
 }
 
-a, a:before, a:after {
+a, a:before, a:after,
+button, input[type="button"] {
     transition: background-color ease .5s,
                 border-color ease .5s;
 }
@@ -198,6 +199,9 @@ input[type="color"]:focus,
 
 // Site header
 //----------------------------------------
+.nav-pills > li > a {
+    border-radius: 0 0 0 0;
+}
 .masthead {
     padding-top: 10px;
     padding-bottom: 30px;
@@ -206,16 +210,24 @@ input[type="color"]:focus,
 
     &, a { color: #333; }
 
-    .navigation {
-	background: @dti-blue;
-	border-radius: 5px;
-	padding: 0 5px;
-	a { color: #fff; }
-    }
     .navigation .nav-pills {
-	li a {
+	> li:first-child > a {
+	    border-top-left-radius: 5px;
+	    border-bottom-left-radius: 5px;
+	    padding-left: 20px;
+	}
+	> li:last-child > a {
+	    border-top-right-radius: 5px;
+	    border-bottom-right-radius: 5px;
+	    padding-right: 20px;
+	}
+	> li > a {
+	    margin: 0;
+	    padding: 10px 10px;
 	    color: #fff;
+	    background: @dti-blue;
 	    transition: background-color ease .5s;
+	    .border-radius(0 0 0 0);
 
 	    &:hover, &:focus {
 		background-color: lighten(@dti-blue, 5%);
@@ -225,6 +237,7 @@ input[type="color"]:focus,
 	    background-color: darken(@dti-blue, 5%);
 	}
     }
+
     input[type="text"] {
 	border-color: darken(@primary, 10%);
 	&:focus {
@@ -243,11 +256,13 @@ input[type="color"]:focus,
 
     .header-image .subtitle {
 	position: absolute;
-	left: 240px;
-	bottom: -2px;
+	right: 0;
+	//bottom: -2px;
+	top: 70px;
 	font-size: 16px;
 	font-style: italic;
 	strong { color: @dti-blue; }
+	//background: #ff0;
     }
 
     .site-search input[name="q"] {

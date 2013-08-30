@@ -1,9 +1,3 @@
-/*---------------------------------------------------
-    LESS Elements 0.9
-  ---------------------------------------------------
-    A set of useful LESS mixins
-    More info at: http://lesselements.com
-  ---------------------------------------------------*/
 .nav-item.active > a:before {
   background-image: none;
   width: 0;
@@ -139,6 +133,12 @@
 .ribbon.new > * {
   background-color: #8cc68a;
 }
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
 body {
   background-color: #282828;
   background-image: none;
@@ -155,7 +155,9 @@ a:focus,
 }
 a,
 a:before,
-a:after {
+a:after,
+button,
+input[type="button"] {
   transition: background-color ease 0.5s, border-color ease 0.5s;
 }
 h1,
@@ -356,6 +358,9 @@ input[type="color"]:focus,
 .account-masthead .account .notifications a span {
   background-color: #8d9a00;
 }
+.nav-pills > li > a {
+  border-radius: 0 0 0 0;
+}
 .masthead {
   padding-top: 10px;
   padding-bottom: 30px;
@@ -366,20 +371,40 @@ input[type="color"]:focus,
 .masthead a {
   color: #333;
 }
-.masthead .navigation {
+.masthead .navigation .nav-pills > li:first-child > a {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-left: 20px;
+}
+.masthead .navigation .nav-pills > li:last-child > a {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-right: 20px;
+}
+.masthead .navigation .nav-pills > li > a {
+  margin: 0;
+  padding: 10px 10px;
+  color: #fff;
   background: #23759f;
-  border-radius: 5px;
-  padding: 0 5px;
-}
-.masthead .navigation a {
-  color: #fff;
-}
-.masthead .navigation .nav-pills li a {
-  color: #fff;
   transition: background-color ease 0.5s;
+  -webkit-border-top-right-radius: 0 0 0 0;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0 0 0 0;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0 0 0 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
-.masthead .navigation .nav-pills li a:hover,
-.masthead .navigation .nav-pills li a:focus {
+.masthead .navigation .nav-pills > li > a:hover,
+.masthead .navigation .nav-pills > li > a:focus {
   background-color: #2884b4;
 }
 .masthead .navigation .nav-pills li.active a {
@@ -401,8 +426,8 @@ input[type="color"]:focus,
 }
 .masthead .header-image .subtitle {
   position: absolute;
-  left: 240px;
-  bottom: -2px;
+  right: 0;
+  top: 70px;
   font-size: 16px;
   font-style: italic;
 }
