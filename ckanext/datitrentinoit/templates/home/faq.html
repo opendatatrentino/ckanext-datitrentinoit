@@ -1,0 +1,24 @@
+{% extends "page.html" %}
+
+{% block subtitle %}{{ _('FAQ') }}{% endblock %}
+
+{% block breadcrumb_content %}
+  <li class="active">
+    {% link_for _('FAQ'),
+        controller='ckanext.datitrentinoit.plugin:DatiTrentinoController',
+        action='faq' %}
+  </li>
+{% endblock %}
+
+{% block primary %}
+  <article class="module">
+    <div class="module-content">
+      {% block about %}
+          <h1 class="page-heading">{{ _('FAQ') }}</h1>
+          {% snippet 'home/snippets/faq_text.html' %}
+      {% endblock %}
+    </div>
+  </article>
+{% endblock %}
+
+{% block secondary %}{% endblock %}
