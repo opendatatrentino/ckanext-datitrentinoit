@@ -41,3 +41,118 @@
     // 	background: #eee;
     // }
 }
+
+// Banner
+//----------------------------------------
+.hero {
+    background-color: #FFFFFF;
+}
+
+
+// Homepage slider
+//----------------------------------------
+.home-slider-container {
+    padding: 20px 0 20px;
+    text-align: center;
+}
+
+.home-primary-text {
+    padding-top: 200px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.home-primary-text {
+    background-image: url(../images/visualise.jpg);
+}
+
+
+// Homepage stuff
+//----------------------------------------
+.home-primary-text,
+.home-search {
+    p { padding: 10px 60px; }
+    text-align: center;
+}
+
+
+.hero .search-giant {
+    input {
+	width: 220px;
+	padding: 11px 10px;
+	.border-radius(0, 0, 3px, 3px);
+	border-color: #888;
+    }
+    button {
+	padding: 11px 10px;
+	margin-top: -10px;
+    }
+}
+
+
+// Homepage slider
+//----------------------------------------
+.home-slider-container {
+    padding: 20px 0 20px;
+    text-align: center;
+}
+
+.home-primary-text {
+    padding-top: 200px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.home-primary-text {
+    background-image: url(../images/visualise.jpg);
+}
+
+
+// Homepage stuff
+//----------------------------------------
+.home-primary-text,
+.home-search {
+    p { padding: 10px 60px; }
+    text-align: center;
+}
+
+
+// Banner
+//----------------------------------------
+.hero {
+    padding: 0;
+    background-color: #222;
+}
+.hero:before {
+    position:absolute;
+    width: 100%;
+    height: 15px;
+    z-index: 1;
+    content:' ';
+    .gradient(
+	rgba(0,0,0,0),
+	rgba(0,0,0,0),
+	rgba(0,0,0,0.3));
+}
+.hero:after {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15px;
+    z-index: 1;
+    content:' ';
+    .gradient(
+	rgba(0,0,0,0),
+	rgba(0,0,0,0.3),
+	rgba(0,0,0,0));
+}
+.hero .search-giant {
+    input {
+	width: 220px;
+	padding: 11px 10px;
+	.border-radius(0, 0, 3px, 3px);
+	border-color: #888;
+    }
+    button {
+	padding: 11px 10px;
+	margin-top: -10px;
+    }
+}

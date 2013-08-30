@@ -207,6 +207,7 @@ input[type="color"]:focus,
     padding-bottom: 30px;
     background-color: #ffffff;
     background-image: none;
+    //border-bottom: solid 1px #ccc;
 
     &, a { color: #333; }
 
@@ -241,8 +242,7 @@ input[type="color"]:focus,
     input[type="text"] {
 	border-color: darken(@primary, 10%);
 	&:focus {
-	    -webkit-box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
-	    box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.7);
+	    .box-shadow(inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3));
 	}
     }
     .site-search input {
@@ -256,13 +256,12 @@ input[type="color"]:focus,
 
     .header-image .subtitle {
 	position: absolute;
-	right: 0;
-	//bottom: -2px;
 	top: 70px;
+	right: 0;
 	font-size: 16px;
 	font-style: italic;
+
 	strong { color: @dti-blue; }
-	//background: #ff0;
     }
 
     .site-search input[name="q"] {
@@ -275,10 +274,10 @@ input[type="color"]:focus,
 
 // Main
 //----------------------------------------
-[role=main],
+[role="main"],
 .main {
-    background-image:none;
-    background-color:#f0f0f0;
+    background-image: none;
+    background-color: #eee;
 }
 
 .box {
@@ -305,8 +304,9 @@ input[type="color"]:focus,
 // Footer
 //----------------------------------------
 .site-footer {
-    background-color: @secondary;
+    background-color: #111;
     background-image: none;
+    border-top: solid 1px #000;
 
     .navigation .nav-pills {
 	a:hover,
@@ -332,51 +332,4 @@ input[type="color"]:focus,
 
 .attribution small {
     color: fade(@secondary-fore, 60%);
-}
-
-
-// Banner
-//----------------------------------------
-.hero {
-    background-color: #FFFFFF;
-}
-
-
-// Homepage slider
-//----------------------------------------
-.home-slider-container {
-    padding: 20px 0 20px;
-    text-align: center;
-}
-
-.home-primary-text {
-    padding-top: 200px;
-    background-repeat: no-repeat;
-    text-align: center;
-}
-.home-primary-text {
-    background-image: url(../images/visualise.jpg);
-}
-
-
-// Homepage stuff
-//----------------------------------------
-.home-primary-text,
-.home-search {
-    p { padding: 10px 60px; }
-    text-align: center;
-}
-
-
-.hero .search-giant {
-    input {
-	width: 220px;
-	padding: 11px 10px;
-	.border-radius(0, 0, 3px, 3px);
-	border-color: #888;
-    }
-    button {
-	padding: 11px 10px;
-	margin-top: -10px;
-    }
 }
