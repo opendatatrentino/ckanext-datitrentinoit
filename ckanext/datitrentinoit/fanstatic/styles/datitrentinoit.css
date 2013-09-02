@@ -154,6 +154,22 @@ button,
 input[type="button"] {
   transition: background-color ease 0.5s, border-color ease 0.5s;
 }
+h1 a[href^="#"],
+h2 a[href^="#"],
+h3 a[href^="#"],
+h4 a[href^="#"],
+h5 a[href^="#"],
+h6 a[href^="#"] {
+  display: none;
+}
+h1:hover a[href^="#"],
+h2:hover a[href^="#"],
+h3:hover a[href^="#"],
+h4:hover a[href^="#"],
+h5:hover a[href^="#"],
+h6:hover a[href^="#"] {
+  display: inline;
+}
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
