@@ -562,18 +562,6 @@ input[type="color"]:focus,
   -moz-box-shadow: inset 1px 1px 0 #ffffff;
   box-shadow: inset 1px 1px 0 #ffffff;
 }
-.home-slider-container {
-  padding: 20px 0 20px;
-  text-align: center;
-}
-.home-primary-text {
-  padding-top: 200px;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-.home-primary-text {
-  background-image: url(../images/visualise.jpg);
-}
 .home-primary-text,
 .home-search {
   text-align: center;
@@ -606,18 +594,6 @@ input[type="color"]:focus,
   padding: 11px 10px;
   margin-top: -10px;
 }
-.home-slider-container {
-  padding: 20px 0 20px;
-  text-align: center;
-}
-.home-primary-text {
-  padding-top: 200px;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-.home-primary-text {
-  background-image: url(../images/visualise.jpg);
-}
 .home-primary-text,
 .home-search {
   text-align: center;
@@ -629,7 +605,6 @@ input[type="color"]:focus,
 .hero {
   padding: 0;
   background-color: #222;
-  background: #222222 url(/images/home-slider/dolomiti-01.jpg) center center;
 }
 .hero:before {
   position: absolute;
@@ -681,4 +656,38 @@ input[type="color"]:focus,
 .hero .search-giant button {
   padding: 11px 10px;
   margin-top: -10px;
+}
+.hero[role="main"] {
+  background: #222222 url(/images/home-slider/dolomiti.jpg) center center;
+}
+.home-slider-container {
+  padding: 180px 0 20px;
+  text-align: center;
+  position: relative;
+}
+.home-slider-container .text-wrapper {
+  height: 180px;
+}
+.home-slider-container .text-wrapper .text-container {
+  color: #fff;
+  padding-top: 30px;
+  text-align: center;
+  text-shadow: #000 2px 2px 5px;
+  font-size: 24px;
+  line-height: 32px;
+}
+.home-slider-container .text-wrapper .text-container h3 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.home-slider-container .text-wrapper .text-container .text-row {
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 0 10px;
+  margin: 3px 0;
+}
+.home-slider-container .text-wrapper .text-container a {
+  color: #eee;
+  text-decoration: underline;
 }

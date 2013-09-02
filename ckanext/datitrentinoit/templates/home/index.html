@@ -6,17 +6,53 @@
   <div class="hero-primary">
     <div class="row">
       <div class="span12">
+
       <div class="home-slider-container">
 	{# <img src="{{ h.url_for_static('/images/home-slider/slider-01.jpg') }}"> #}
-	<div style="height: 180px; color: #fff;">
-	  <div style="padding: 50px; text-align:center; text-shadow: rgba(0,0,0,1) 2px 2px 5px; font-size: 24px; line-height: 32px;">
-	  <h3 style="font-size: 32px; text-transform: uppercase; font-weight: normal;">Che tempo fa, oggi, in Trentino</h3>
-	  <div style="background: rgba(0,0,0,.5); display:inline;padding:0 10px;">
-	    tutti i dataset sul meteo: le previsioni giornaliere, le previsioni in montagna,&nbsp;<br>
-	    &nbsp;le probabilit&agrave; di pioggia</div>
+
+	<div class="text-wrapper" data-bgimage="dolomiti.jpg">
+	  <div class="text-container">
+	    <h3>Che tempo fa, oggi, in Trentino</h3>
+	    <div class="text-row">
+	      tutti i <a href="/group/cat-meteo">dataset sul meteo</a>:
+	      le previsioni giornaliere, le previsioni
+	    </div>
+	    <div class="text-row">
+	      in montagna, le probabilit&agrave; di pioggia
+	    </div>
 	  </div>
 	</div>
-      </div>
+
+	<div class="text-wrapper" data-bgimage="vigneto.jpg" style="display:none;">
+	  <div class="text-container">
+	    <h3>DOP, IGT, SGP</h3>
+	    <div class="text-row">
+	      i prodotti tipici che danno sapore alla Provincia di Trento
+	    </div><br>
+	    <div class="text-row">
+	      <a href="/dataset?tags=prodotti+tipici">
+		Clicca qui per scoprire di pi&ugrave;</a>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="text-wrapper" data-bgimage="cielo.jpg" style="display:none;">
+	  <div class="text-container">
+	    <h3>Voliamo in alto</h3>
+	    <div class="text-row">
+	      Hai un idea che usi i dataset della Provincia?
+	    </div>
+	    <div class="text-row">
+	      Ci sono dati che vorresti fossero resi disponibili?
+	    </div>
+	    <div class="text-row">
+	      info&#64;dati.trentino.it
+	    </div>
+	  </div>
+	</div>
+
+      </div><!-- .home-slider-container -->
+
       </div>
     </div>
 
@@ -107,4 +143,11 @@
     </div>
 
   </div>
+{% endblock %}
+
+
+{% block body_extras %}
+  {{ super() }}
+  {% resource 'ckanext-datitrentinoit/scripts/homepage-slider.js' %}
+  <script type="text/javascript" src="/scripts/homepage-slider.js"></script>
 {% endblock %}

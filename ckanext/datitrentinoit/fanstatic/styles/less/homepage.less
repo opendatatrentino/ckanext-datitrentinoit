@@ -50,23 +50,6 @@
 }
 
 
-// Homepage slider
-//----------------------------------------
-.home-slider-container {
-    padding: 20px 0 20px;
-    text-align: center;
-}
-
-.home-primary-text {
-    padding-top: 200px;
-    background-repeat: no-repeat;
-    text-align: center;
-}
-.home-primary-text {
-    background-image: url(../images/visualise.jpg);
-}
-
-
 // Homepage stuff
 //----------------------------------------
 .home-primary-text,
@@ -92,19 +75,19 @@
 
 // Homepage slider
 //----------------------------------------
-.home-slider-container {
-    padding: 20px 0 20px;
-    text-align: center;
-}
+// .home-slider-container {
+//     padding: 20px 0 20px;
+//     text-align: center;
+// }
 
-.home-primary-text {
-    padding-top: 200px;
-    background-repeat: no-repeat;
-    text-align: center;
-}
-.home-primary-text {
-    background-image: url(../images/visualise.jpg);
-}
+// .home-primary-text {
+//     padding-top: 200px;
+//     background-repeat: no-repeat;
+//     text-align: center;
+// }
+// .home-primary-text {
+//     background-image: url(../images/visualise.jpg);
+// }
 
 
 // Homepage stuff
@@ -121,7 +104,6 @@
 .hero {
     padding: 0;
     background-color: #222;
-    background: #222 url(/images/home-slider/dolomiti-01.jpg) center center;
 }
 .hero:before {
     position:absolute;
@@ -156,5 +138,54 @@
     button {
 	padding: 11px 10px;
 	margin-top: -10px;
+    }
+}
+
+// .home-primary-text {
+//     padding-top: 200px;
+//     background-repeat: no-repeat;
+//     text-align: center;
+// }
+// .home-primary-text {
+//     background-image: url(../images/visualise.jpg);
+// }
+
+
+// Homepage slider
+//----------------------------------------
+.hero[role="main"] {
+    background: #222 url(/images/home-slider/dolomiti.jpg) center center;
+}
+.home-slider-container {
+    padding: 180px 0 20px;
+    text-align: center;
+    position: relative;
+
+    .text-wrapper {
+	height: 180px;
+
+	.text-container {
+	    color: #fff;
+	    padding-top: 30px;
+	    text-align: center;
+	    text-shadow: #000 2px 2px 5px;
+	    font-size: 24px;
+	    line-height: 32px;
+	    h3 {
+		font-size: 32px;
+		text-transform: uppercase;
+		font-weight: normal;
+	    }
+	    .text-row {
+		background: rgba(0,0,0,.5);
+		display: inline-block;
+		padding: 0 10px;
+		margin: 3px 0;
+	    }
+	    a {
+		color: #eee;
+		text-decoration: underline;
+	    }
+	}
     }
 }
