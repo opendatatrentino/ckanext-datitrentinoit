@@ -11,6 +11,9 @@
       {{ _('Frequently Asked Questions') }}
   </a></li>
   <li><a href="/revision/list?format=atom"><i class="icon-rss"></i> Atom Feed</a></li>
+  <li><a href="{{ h.url_for(controller='ckanext.datitrentinoit.plugin:DatiTrentinoController', action='acknowledgements') }}">
+      {{ _('Acknowledgements') }}
+  </a></li>
 {% endblock %}
 
 {% block footer_links_ckan %}
