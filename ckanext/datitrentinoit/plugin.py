@@ -21,6 +21,7 @@ class DatiTrentinoPlugin(SingletonPlugin):
         controller = 'ckanext.datitrentinoit.plugin:DatiTrentinoController'
         with routes_mapper.SubMapper(routes, controller=controller) as m:
             m.connect('faq', '/faq', action='faq')
+            m.connect('acknowledgements', '/acknowledgements', action='acknowledgements')
         return routes
 
     def after_map(self, routes):
@@ -30,3 +31,6 @@ class DatiTrentinoPlugin(SingletonPlugin):
 class DatiTrentinoController(base.BaseController):
     def faq(self):
         return base.render('home/faq.html')
+
+    def acknowledgements(self):
+        return base.render('home/acknowledgements.html')

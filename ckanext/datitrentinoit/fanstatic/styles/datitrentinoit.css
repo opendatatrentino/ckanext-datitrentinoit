@@ -555,14 +555,12 @@ input[type="color"]:focus,
   padding: 20px;
   text-align: center;
   background: #eee;
+  background: rgba(238, 238, 238, 0.9);
   border: solid 1px #ddd;
   border-radius: 3px;
   -webkit-box-shadow: inset 1px 1px 0 #ffffff;
   -moz-box-shadow: inset 1px 1px 0 #ffffff;
   box-shadow: inset 1px 1px 0 #ffffff;
-}
-.hero {
-  background-color: #FFFFFF;
 }
 .home-slider-container {
   padding: 20px 0 20px;
@@ -631,6 +629,7 @@ input[type="color"]:focus,
 .hero {
   padding: 0;
   background-color: #222;
+  background: #222222 url(/images/home-slider/dolomiti-01.jpg) center center;
 }
 .hero:before {
   position: absolute;
