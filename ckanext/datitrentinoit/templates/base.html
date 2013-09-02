@@ -1,5 +1,14 @@
 {% ckan_extends %}
 
+{% block meta %}
+  {{ super() }}
+  <link
+     rel="alternate"
+     type="application/atom+xml"
+     title="{{ g.site_title }} Atom Feed"
+     href="/revision/list?format=atom" />
+{% endblock %}
+
 {% block styles %}
   {{ super() }}
   {% resource 'ckanext-datitrentinoit/styles/datitrentinoit.css' %}

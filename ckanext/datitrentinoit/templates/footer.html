@@ -2,8 +2,15 @@
 
 {% block footer_links %}
   {% set api_url = 'http://docs.ckan.org/{0}/{1}/api.html'.format(request.environ.CKAN_LANG, g.ckan_doc_version) %}
-  <li><a href="{{ h.url_for(controller='home', action='about') }}">{{ _('About {0}').format(g.site_title) }}</a></li>
-  <li><a href="{{ h.url_for(controller='ckanext.datitrentinoit.plugin:DatiTrentinoController', action='faq') }}">{{ _('FAQ') }}</a></li>
+  <li><a href="{{ h.url_for(controller='home', action='about') }}">
+      <i class="icon-comment"></i>
+      {{ _('About {0}').format(g.site_title) }}
+  </a></li>
+  <li><a href="{{ h.url_for(controller='ckanext.datitrentinoit.plugin:DatiTrentinoController', action='faq') }}">
+      <i class="icon-question"></i>
+      {{ _('Frequently Asked Questions') }}
+  </a></li>
+  <li><a href="/revision/list?format=atom"><i class="icon-rss"></i> Atom Feed</a></li>
 {% endblock %}
 
 {% block footer_links_ckan %}
