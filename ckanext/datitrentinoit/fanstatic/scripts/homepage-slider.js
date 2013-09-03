@@ -8,7 +8,7 @@
 $(document).ready(function(){
 
     var conf = {
-        fadeTime: 500,
+        fadeTime: 800,
         rollTime: 6000
     };
 

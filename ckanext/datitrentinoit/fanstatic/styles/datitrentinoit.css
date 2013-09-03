@@ -1,9 +1,3 @@
-/*---------------------------------------------------
-    LESS Elements 0.9
-  ---------------------------------------------------
-    A set of useful LESS mixins
-    More info at: http://lesselements.com
-  ---------------------------------------------------*/
 .nav-item.active > a:before {
   background-image: none;
   width: 0;
@@ -123,6 +117,12 @@
 .ribbon.new > * {
   background-color: #8cc68a;
 }
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
 body {
   background-color: #282828;
   background-image: none;
@@ -598,6 +598,7 @@ input[type="color"]:focus,
   bottom: 0;
   height: 400px;
   z-index: 1;
+  background-position: center center;
 }
 .homepage-slider-ng .text-wrapper .text-container {
   color: #fff;
