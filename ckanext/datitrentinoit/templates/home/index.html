@@ -1,104 +1,121 @@
 {% ckan_extends %}
 
+
+{% block content %}
+  {{ self.primary_content() }}
+
+<div class="container">
+  {{ self.flash() }}
+</div>
+
+  <div class="main homepage">
+    <div class="container">
+      {{ self.secondary_content() }}
+    </div>
+  </div>
+{% endblock %}
+
+
+
 {% block primary_content %}
 
-  {% block home_primary %}
-  <div class="hero-primary">
-    <div class="row">
-      <div class="span12">
+{% resource 'ckanext-datitrentinoit/scripts/homepage-slider.js' %}
 
-      <div class="home-slider-container">
-	{# <img src="{{ h.url_for_static('/images/home-slider/slider-01.jpg') }}"> #}
+<div class="homepage-slider-ng">
+  <div class="images-wrapper">
 
-	<div class="text-wrapper" data-bgimage="dolomiti.jpg">
-	  <div class="text-container">
-	    <h3>Che tempo fa, oggi, in Trentino</h3>
-	    <div class="text-row">
-	      tutti i <a href="/group/cat-meteo">dataset sul meteo</a>:
-	      le previsioni giornaliere, le previsioni
-	    </div>
-	    <div class="text-row">
-	      in montagna, le probabilit&agrave; di pioggia
-	    </div>
-	  </div>
+    <div class="text-wrapper" style="background:url(/images/home-slider/dolomiti.jpg)">
+      <div class="text-container">
+	<h3>Che tempo fa, oggi, in Trentino</h3>
+	<div class="text-row">
+	  tutti i <a href="/group/cat-meteo">dataset sul meteo</a>:
+	  le previsioni giornaliere, le previsioni
 	</div>
-
-	<div class="text-wrapper" data-bgimage="vigneto.jpg" style="display:none;">
-	  <div class="text-container">
-	    <h3>DOP, IGT, SGP</h3>
-	    <div class="text-row">
-	      i prodotti tipici che danno sapore alla Provincia di Trento
-	    </div><br>
-	    <div class="text-row">
-	      <a href="/dataset?tags=prodotti+tipici">
-		Clicca qui per scoprire di pi&ugrave;</a>
-	    </div>
-	  </div>
+	<div class="text-row">
+	  in montagna, le probabilit&agrave; di pioggia
 	</div>
-
-	<div class="text-wrapper" data-bgimage="cielo.jpg" style="display:none;">
-	  <div class="text-container">
-	    <h3>Voliamo in alto</h3>
-	    <div class="text-row">
-	      Hai un idea che usi i dataset della Provincia?
-	    </div>
-	    <div class="text-row">
-	      Ci sono dati che vorresti fossero resi disponibili?
-	    </div>
-	    <div class="text-row">
-	      info&#64;dati.trentino.it
-	    </div>
-	  </div>
-	</div>
-
-      </div><!-- .home-slider-container -->
-
       </div>
     </div>
 
-    <div class="row">
-      <div class="span6">
-	<div class="home-box">
-	  {% block home_primary_content %}
-   	    <h3>{{ _('Popular Tags') }}</h3>
-   	    {% set tags = h.get_facet_items_dict('tags', limit=10) %}
-   	    <ul class="tag-list-2">
-   	      {% for tag in tags %}
-   	      <li>
-		<a class="tag-item"
-		   href="{% url_for controller='package', action='search', tags=tag.name %}">
-		  {{ h.truncate(tag.display_name, 22) }}
-	        </a>
-	      </li>
-   	      {% endfor %}
-   	    </ul>
+    <div class="text-wrapper" style="background: url(/images/home-slider/vigneto.jpg); display: none;">
+      <div class="text-container">
+	<h3>DOP, IGT, SGP</h3>
+	<div class="text-row">
+	  i prodotti tipici che danno sapore alla Provincia di Trento
+	</div><br>
+	<div class="text-row">
+	  <a href="/dataset?tags=prodotti+tipici">
+	    Clicca qui per scoprire di pi&ugrave;</a>
 	</div>
-	  {% endblock home_primary_content %}
       </div>
-      <div class="span6">
-	<div class="home-box">
-	{% block home_search %}
-	<form class="dataset-search clearfix" method="get" action="{% url_for controller='package', action='search' %}">
-	  <h3 class="heading">{{ _("Find data") }}</h3>
-	  <p>Search for data, and get updates from datasets and groups that you're interested in.</p>
-	  <span class="btn-group search-giant">
-	    <input type="text" class="search" name="q" value="{{ c.q }}" autocomplete="off" placeholder="{{ _('Search') }}" />
-	    <button type="submit" value="{{ _('Search') }}" class="btn btn-primary">Submit</button>
-	  </span>
-	</form>
-	{% endblock home_search %}
+    </div>
+
+    <div class="text-wrapper" style="background: url(/images/home-slider/cielo.jpg); display: none;">
+      <div class="text-container">
+	<h3>Voliamo in alto</h3>
+	<div class="text-row">
+	  Hai un idea che usi i dataset della Provincia?
+	</div>
+	<div class="text-row">
+	  Ci sono dati che vorresti fossero resi disponibili?
+	</div>
+	<div class="text-row">
+	  Scrivi a <a href="mailto:info&#64;dati.trentino.it">info&#64;dati.trentino.it</a>
 	</div>
       </div>
     </div>
 
   </div>
-  {% endblock home_primary %}
 
-  {# <div class="hero-secondary"> #}
-  {#   {% block home_secondary_content %} #}
-  {#   &laquo;qui possiamo mettere del testo per dire quanto siamo fighi, o roba del genere&raquo; #}
-  {#   {% endblock %} #}
-  {# </div> #}
+  <div class="boxes-wrapper container">
+  <div class="row">
+
+    <div class="span6">
+      <div class="home-box">
+   	<h3>
+	  {{ _('Popular Tags') }}
+	</h3>
+   	{% set tags = h.get_facet_items_dict('tags', limit=10) %}
+   	<ul class="tag-list-2">
+   	  {% for tag in tags %}
+   	  <li>
+	    <a class="tag-item"
+	       href="{% url_for controller='package', action='search', tags=tag.name %}">
+	      {{ h.truncate(tag.display_name, 22) }}
+	    </a>
+	  </li>
+   	  {% endfor %}
+   	</ul>
+      </div>
+    </div><!-- .span6 -->
+
+    <div class="span6">
+      <div class="home-box">
+	<h3>{{ _("Find data") }}</h3>
+	<p>Search for data, and get updates from datasets and groups
+	  that you're interested in.</p>
+	<form class="dataset-search clearfix"
+	      method="get"
+	      action="{% url_for controller='package', action='search' %}">
+	  <span class="btn-group search-giant">
+	    <input type="text"
+		   class="search"
+		   name="q"
+		   value="{{ c.q }}"
+		   autocomplete="off"
+		   placeholder="{{ _('Search') }}" />
+	    <button type="submit"
+		    value="{{ _('Search') }}"
+		    class="btn btn-primary">
+	      <i class="icon-search"></i> Search</button>
+	  </span>
+	</form>
+      </div><!-- .home-box -->
+    </div><!-- .span6 -->
+
+  </div><!-- .row.boxes-wrapper -->
+  </div><!-- .container -->
+</div>
 
 {% endblock primary_content %}
 
@@ -145,9 +162,3 @@
   </div>
 {% endblock %}
 
-
-{% block body_extras %}
-  {{ super() }}
-  {% resource 'ckanext-datitrentinoit/scripts/homepage-slider.js' %}
-  <script type="text/javascript" src="/scripts/homepage-slider.js"></script>
-{% endblock %}

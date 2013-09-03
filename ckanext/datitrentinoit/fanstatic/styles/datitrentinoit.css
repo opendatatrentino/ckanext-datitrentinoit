@@ -524,75 +524,30 @@ input[type="color"]:focus,
 .tag-list-2 a.tag-item:hover {
   background: #888;
 }
-.main.homepage .tags.box {
-  margin: -1px 0 20px 0;
-  padding: 13px 20px;
-  -webkit-border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-top-left-radius: 0;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-topleft: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  -moz-background-clip: padding-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-.main.homepage .tags.box h3 {
-  float: left;
-  font-size: 15px;
-  line-height: 24px;
-  margin: 0 10px 0 0;
-}
 .home-box {
   height: 140px;
   margin: 0 0 20px 0;
   padding: 20px;
   text-align: center;
   background: #eee;
-  background: rgba(238, 238, 238, 0.9);
+  background: rgba(238, 238, 238, 0.8);
   border: solid 1px #ddd;
   border-radius: 3px;
   -webkit-box-shadow: inset 1px 1px 0 #ffffff;
   -moz-box-shadow: inset 1px 1px 0 #ffffff;
   box-shadow: inset 1px 1px 0 #ffffff;
 }
-.home-primary-text,
-.home-search {
-  text-align: center;
+.home-box h3 {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 0 10px;
 }
-.home-primary-text p,
-.home-search p {
-  padding: 10px 60px;
+.home-box .dataset-search {
+  margin-top: 20px;
 }
-.hero .search-giant input {
-  width: 220px;
-  padding: 11px 10px;
-  -webkit-border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 3px;
-  -webkit-border-top-left-radius: 3px;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 3px;
-  -moz-border-radius-topleft: 3px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px;
-  -moz-background-clip: padding-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border-color: #888;
-}
-.hero .search-giant button {
-  padding: 11px 10px;
-  margin-top: -10px;
+.home-box .dataset-search input,
+.home-box .dataset-search button {
+  margin: 0;
 }
 .home-primary-text,
 .home-search {
@@ -602,16 +557,23 @@ input[type="color"]:focus,
 .home-search p {
   padding: 10px 60px;
 }
-.hero {
-  padding: 0;
-  background-color: #222;
+.homepage-slider-ng {
+  height: 400px;
+  position: relative;
+  background: #333;
 }
-.hero:before {
+.homepage-slider-ng:before,
+.homepage-slider-ng:after {
   position: absolute;
   width: 100%;
   height: 15px;
-  z-index: 1;
+  z-index: 10;
   content: ' ';
+  left: 0;
+  right: 0;
+}
+.homepage-slider-ng:before {
+  top: 0;
   background: rgba(0, 0, 0, 0);
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0)), color-stop(1, rgba(0, 0, 0, 0.3)));
   background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
@@ -619,13 +581,8 @@ input[type="color"]:focus,
   background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 0.3)', endColorstr='rgba(0, 0, 0, 0)', GradientType=0);
 }
-.hero:after {
-  position: absolute;
+.homepage-slider-ng:after {
   bottom: 0;
-  width: 100%;
-  height: 15px;
-  z-index: 1;
-  content: ' ';
   background: rgba(0, 0, 0, 0);
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0.3)), color-stop(1, rgba(0, 0, 0, 0)));
   background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
@@ -633,61 +590,48 @@ input[type="color"]:focus,
   background: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(0, 0, 0, 0)', endColorstr='rgba(0, 0, 0, 0.3)', GradientType=0);
 }
-.hero .search-giant input {
-  width: 220px;
-  padding: 11px 10px;
-  -webkit-border-top-right-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
-  -webkit-border-bottom-left-radius: 3px;
-  -webkit-border-top-left-radius: 3px;
-  -moz-border-radius-topright: 0;
-  -moz-border-radius-bottomright: 0;
-  -moz-border-radius-bottomleft: 3px;
-  -moz-border-radius-topleft: 3px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px;
-  -moz-background-clip: padding-box;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  border-color: #888;
+.homepage-slider-ng .text-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 400px;
+  z-index: 1;
 }
-.hero .search-giant button {
-  padding: 11px 10px;
-  margin-top: -10px;
-}
-.hero[role="main"] {
-  background: #222222 url(/images/home-slider/dolomiti.jpg) center center;
-}
-.home-slider-container {
-  padding: 180px 0 20px;
-  text-align: center;
-  position: relative;
-}
-.home-slider-container .text-wrapper {
-  height: 180px;
-}
-.home-slider-container .text-wrapper .text-container {
+.homepage-slider-ng .text-wrapper .text-container {
   color: #fff;
   padding-top: 30px;
   text-align: center;
   text-shadow: #000 2px 2px 5px;
   font-size: 24px;
   line-height: 32px;
+  width: 900px;
+  margin: 0 auto;
 }
-.home-slider-container .text-wrapper .text-container h3 {
+.homepage-slider-ng .text-wrapper .text-container h3 {
   font-size: 32px;
   text-transform: uppercase;
   font-weight: normal;
 }
-.home-slider-container .text-wrapper .text-container .text-row {
+.homepage-slider-ng .text-wrapper .text-container .text-row {
   background: rgba(0, 0, 0, 0.5);
   display: inline-block;
   padding: 0 10px;
   margin: 3px 0;
 }
-.home-slider-container .text-wrapper .text-container a {
+.homepage-slider-ng .text-wrapper .text-container a {
   color: #eee;
   text-decoration: underline;
+}
+.homepage-slider-ng .boxes-wrapper {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}
+.homepage-slider-ng .boxes-wrapper,
+.homepage-slider-ng .boxes-wrapper .home-box {
+  z-index: 10 !important;
 }

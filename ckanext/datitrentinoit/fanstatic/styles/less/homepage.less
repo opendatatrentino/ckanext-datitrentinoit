@@ -2,53 +2,30 @@
 // Homepage styles
 //============================================================
 
-.main.homepage .tags.box {
-    margin: -1px 0 20px 0;
-    padding: 13px 20px;
-    .border-radius(0,0,0,0);
-
-    h3 {
-	float: left;
-	font-size: 15px;
-	line-height: 24px;
-	margin: 0 10px 0 0;
-    }
-}
-
+// Homepage boxes
+//----------------------------------------
 .home-box {
     height: 140px;
     margin: 0 0 20px 0;
     padding: 20px;
     text-align: center;
     background: #eee;
-    background: rgba(238, 238, 238, .9);
+    background: rgba(238, 238, 238, .8);
     border: solid 1px #ddd;
     border-radius: 3px;
     .box-shadow(inset 1px 1px 0 #fff);
-
-    // .tag-list-2 a.tag-item {
-    // 	background: @tag-bg;
-    // }
-    // .tag-list-2 a.tag-item:before {
-    // 	border-color: transparent #fff transparent transparent;
-    // }
-    // .tag-list-2 a.tag-item:hover {
-    // 	background: @tag-hover-bg;
-    // }
-    // .tag-list-2 a.tag-item:hover:before {
-    // 	border-color: transparent @tag-hover-bg transparent transparent;
-    // }
-    // .tag-list-2 a.tag-item:after {
-    // 	background: #eee;
-    // }
+    h3 {
+	font-size: 24px;
+	line-height: 28px;
+	margin: 0 0 10px;
+    }
+    .dataset-search {
+	margin-top: 20px;
+	input, button {
+	    margin: 0;
+	}
+    }
 }
-
-// Banner
-//----------------------------------------
-.hero {
-    //background-color: #FFFFFF;
-}
-
 
 // Homepage stuff
 //----------------------------------------
@@ -59,110 +36,45 @@
 }
 
 
-.hero .search-giant {
-    input {
-	width: 220px;
-	padding: 11px 10px;
-	.border-radius(0, 0, 3px, 3px);
-	border-color: #888;
-    }
-    button {
-	padding: 11px 10px;
-	margin-top: -10px;
-    }
-}
-
-
 // Homepage slider
 //----------------------------------------
-// .home-slider-container {
-//     padding: 20px 0 20px;
-//     text-align: center;
-// }
-
-// .home-primary-text {
-//     padding-top: 200px;
-//     background-repeat: no-repeat;
-//     text-align: center;
-// }
-// .home-primary-text {
-//     background-image: url(../images/visualise.jpg);
-// }
-
-
-// Homepage stuff
-//----------------------------------------
-.home-primary-text,
-.home-search {
-    p { padding: 10px 60px; }
-    text-align: center;
-}
-
-
-// Banner
-//----------------------------------------
-.hero {
-    padding: 0;
-    background-color: #222;
-}
-.hero:before {
-    position:absolute;
-    width: 100%;
-    height: 15px;
-    z-index: 1;
-    content:' ';
-    .gradient(
-	rgba(0,0,0,0),
-	rgba(0,0,0,0),
-	rgba(0,0,0,0.3));
-}
-.hero:after {
-    position:absolute;
-    bottom: 0;
-    width: 100%;
-    height: 15px;
-    z-index: 1;
-    content:' ';
-    .gradient(
-	rgba(0,0,0,0),
-	rgba(0,0,0,0.3),
-	rgba(0,0,0,0));
-}
-.hero .search-giant {
-    input {
-	width: 220px;
-	padding: 11px 10px;
-	.border-radius(0, 0, 3px, 3px);
-	border-color: #888;
-    }
-    button {
-	padding: 11px 10px;
-	margin-top: -10px;
-    }
-}
-
-// .home-primary-text {
-//     padding-top: 200px;
-//     background-repeat: no-repeat;
-//     text-align: center;
-// }
-// .home-primary-text {
-//     background-image: url(../images/visualise.jpg);
-// }
-
-
-// Homepage slider
-//----------------------------------------
-.hero[role="main"] {
-    background: #222 url(/images/home-slider/dolomiti.jpg) center center;
-}
-.home-slider-container {
-    padding: 180px 0 20px;
-    text-align: center;
+.homepage-slider-ng {
+    height: 400px;
     position: relative;
+    background: #333;
+
+    &:before, &:after {
+	position: absolute;
+	width: 100%;
+	height: 15px;
+	z-index: 10;
+	content:' ';
+	left: 0;
+	right: 0;
+    }
+    &:before {
+	top: 0;
+	.gradient(
+	    rgba(0,0,0,0),
+	    rgba(0,0,0,0),
+	    rgba(0,0,0,0.3));
+    }
+    &:after {
+	bottom: 0;
+	.gradient(
+	    rgba(0,0,0,0),
+	    rgba(0,0,0,0.3),
+	    rgba(0,0,0,0));
+    }
 
     .text-wrapper {
-	height: 180px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 400px;
+	z-index: 1;
 
 	.text-container {
 	    color: #fff;
@@ -171,6 +83,9 @@
 	    text-shadow: #000 2px 2px 5px;
 	    font-size: 24px;
 	    line-height: 32px;
+	    width: 900px;
+	    margin: 0 auto;
+
 	    h3 {
 		font-size: 32px;
 		text-transform: uppercase;
@@ -188,4 +103,29 @@
 	    }
 	}
     }
+    .boxes-wrapper {
+	position: absolute;
+	top: 200px;
+	left: 0;
+	right: 0;
+	bottom: 10px;
+    }
+    .boxes-wrapper,
+    .boxes-wrapper .home-box {
+	z-index: 10 !important;
+    }
 }
+
+// .hero[role="main"] {
+//     background: #222 url(/images/home-slider/dolomiti.jpg) center center;
+// }
+// .home-slider-ng {
+//     padding: 180px 0 20px;
+//     text-align: center;
+//     position: relative;
+
+//     .text-wrapper {
+// 	height: 180px;
+
+//     }
+// }
