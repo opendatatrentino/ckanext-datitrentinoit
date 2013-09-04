@@ -1,5 +1,7 @@
 {% extends "page.html" %}
 
+{% set lang = h.lang() %}
+
 {% block subtitle %}{{ _('FAQ') }}{% endblock %}
 
 {% block breadcrumb_content %}
@@ -15,7 +17,11 @@
     <div class="module-content">
       {% block about %}
           <h1 class="page-heading">{{ _('FAQ') }}</h1>
-          {% snippet 'home/snippets/faq_text.html' %}
+	{% if lang == 'it' %}
+	  {% snippet 'home/snippets/faq_text_it.html' %}
+	{% else %}
+	  {% snippet 'home/snippets/faq_text.html' %}
+	{% endif %}
       {% endblock %}
     </div>
   </article>
