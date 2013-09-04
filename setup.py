@@ -2,10 +2,11 @@ from setuptools import setup, find_packages
 
 version = '0.1'
 
-entry_points = """
-[ckan.plugins]
-datitrentinoit=ckanext.datitrentinoit.plugin:DatiTrentinoPlugin
-"""
+entry_points = {
+    'ckan.plugins': [
+        "datitrentinoit = ckanext.datitrentinoit.plugin:DatiTrentinoPlugin",
+    ],
+}
 
 setup(
     name='ckanext-datitrentinoit',
