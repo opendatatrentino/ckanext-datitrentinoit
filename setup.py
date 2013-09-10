@@ -5,6 +5,7 @@ version = '0.1'
 entry_points = {
     'ckan.plugins': [
         "datitrentinoit = ckanext.datitrentinoit.plugin:DatiTrentinoPlugin",
+        "datitrentinoit_form = ckanext.datitrentinoit.plugin:DatiTrentinoFormPlugin",
     ],
 }
 
