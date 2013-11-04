@@ -1,18 +1,19 @@
-# Translations template for ckanext-datitrentinoit.
+# English translations for ckanext-datitrentinoit.
 # Copyright (C) 2013 ORGANIZATION
-# This file is distributed under the same license as the ckanext-datitrentinoit
+# This file is distributed under the same license as the
+# ckanext-datitrentinoit
 # project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-datitrentinoit 0.1.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-04 18:58+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2013-11-04 18:56+0100\n"
+"PO-Revision-Date: 2013-11-04 18:57+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
