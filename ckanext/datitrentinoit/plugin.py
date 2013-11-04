@@ -8,6 +8,10 @@ import ckan.plugins.toolkit as plugins_toolkit
 import routes.mapper as routes_mapper
 
 
+static_pages = ['faq', 'acknowledgements', 'legal_notes', 'privacy']
+#static_pages = ['faq', 'acknowledgements']
+
+
 class DatiTrentinoPlugin(SingletonPlugin):
     """Controller used to load custom templates/resources/pages"""
 
@@ -28,9 +32,9 @@ class DatiTrentinoPlugin(SingletonPlugin):
     def before_map(self, routes):
         controller = 'ckanext.datitrentinoit.plugin:DatiTrentinoController'
         with routes_mapper.SubMapper(routes, controller=controller) as m:
-            m.connect('faq', '/faq', action='faq')
-            m.connect('acknowledgements', '/acknowledgements',
-                      action='acknowledgements')
+            for page_name in static_pages:
+                page_slug = page_name.replace('_', '-')
+                m.connect(page_name, '/' + page_slug, action=page_name)
         return routes
 
     def after_map(self, routes):
@@ -40,11 +44,15 @@ class DatiTrentinoPlugin(SingletonPlugin):
 class DatiTrentinoController(base.BaseController):
     """Controller used to add custom pages"""
 
-    def faq(self):
-        return base.render('home/faq.html')
 
-    def acknowledgements(self):
-        return base.render('home/acknowledgements.html')
+for page_name in static_pages:
+    def get_action(name):
+        def action(self):
+            return base.render('pages/{0}.html'.format(name))
+        return action
+    action = get_action(page_name)
+    action.__name__ = page_name
+    setattr(DatiTrentinoController, page_name, action)
 
 
 class DatiTrentinoFormPlugin(SingletonPlugin,

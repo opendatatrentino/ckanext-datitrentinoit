@@ -2,13 +2,13 @@
 
 {% set lang = h.lang() %}
 
-{% block subtitle %}{{ _('FAQ') }}{% endblock %}
+{% block subtitle %}{{ _('Privacy') }}{% endblock %}
 
 {% block breadcrumb_content %}
   <li class="active">
-    {% link_for _('FAQ'),
+    {% link_for _('Privacy'),
         controller='ckanext.datitrentinoit.plugin:DatiTrentinoController',
-        action='faq' %}
+        action='privacy' %}
   </li>
 {% endblock %}
 
@@ -16,11 +16,12 @@
   <article class="module">
     <div class="module-content">
       {% block about %}
-          <h1 class="page-heading">{{ _('FAQ') }}</h1>
 	{% if lang == 'it' %}
-	  {% snippet 'home/snippets/faq_text_it.html' %}
+	  <h1 class="page-heading">Informativa sulla privacy</h1>
+	  {% snippet 'pages/privacy_text_it.html' %}
 	{% else %}
-	  {% snippet 'home/snippets/faq_text.html' %}
+	  <h1 class="page-heading">Privacy</h1>
+	  {% snippet 'pages/privacy_text.html' %}
 	{% endif %}
       {% endblock %}
     </div>

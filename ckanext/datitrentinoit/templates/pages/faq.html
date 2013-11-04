@@ -2,21 +2,25 @@
 
 {% set lang = h.lang() %}
 
-{% block subtitle %}{{ _('About') }}{% endblock %}
+{% block subtitle %}{{ _('FAQ') }}{% endblock %}
 
 {% block breadcrumb_content %}
-  <li class="active">{% link_for _('About'), controller='home', action='about' %}</li>
+  <li class="active">
+    {% link_for _('FAQ'),
+        controller='ckanext.datitrentinoit.plugin:DatiTrentinoController',
+        action='faq' %}
+  </li>
 {% endblock %}
 
 {% block primary %}
   <article class="module">
     <div class="module-content">
       {% block about %}
-	<h1 class="page-heading">{{ _('About') }}</h1>
+          <h1 class="page-heading">{{ _('FAQ') }}</h1>
 	{% if lang == 'it' %}
-	  {% snippet 'home/about_text_it.html' %}
+	  {% snippet 'pages/faq_text_it.html' %}
 	{% else %}
-	  {% snippet 'home/about_text.html' %}
+	  {% snippet 'pages/faq_text.html' %}
 	{% endif %}
       {% endblock %}
     </div>

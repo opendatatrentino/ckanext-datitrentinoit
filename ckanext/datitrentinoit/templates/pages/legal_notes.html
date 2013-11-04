@@ -1,0 +1,31 @@
+{% extends "page.html" %}
+
+{% set lang = h.lang() %}
+
+{% block subtitle %}{{ _('Legal notes') }}{% endblock %}
+
+{% block breadcrumb_content %}
+  <li class="active">
+    {% link_for _('Legal notes'),
+        controller='ckanext.datitrentinoit.plugin:DatiTrentinoController',
+        action='legal_notes' %}
+  </li>
+{% endblock %}
+
+{% block primary %}
+  <article class="module">
+    <div class="module-content">
+      {% block about %}
+	{% if lang == 'it' %}
+	  <h1 class="page-heading">Note legali</h1>
+	  {% snippet 'pages/legal_notes_text_it.html' %}
+	{% else %}
+	  <h1 class="page-heading">Legal notes</h1>
+	  {% snippet 'pages/legal_notes_text.html' %}
+	{% endif %}
+      {% endblock %}
+    </div>
+  </article>
+{% endblock %}
+
+{% block secondary %}{% endblock %}
