@@ -1,0 +1,123 @@
+# Translations template for ckanext-datitrentinoit.
+# Copyright (C) 2013 ORGANIZATION
+# This file is distributed under the same license as the ckanext-datitrentinoit
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ckanext-datitrentinoit 0.1.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2013-11-04 18:56+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+#: ckanext/datitrentinoit/templates/group/snippets/group_item.html:26
+msgid "This category has no description"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/group/snippets/group_item.html:31
+msgid "{num} Dataset"
+msgid_plural "{num} Datasets"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/datitrentinoit/templates/group/snippets/group_item.html:33
+msgid "0 Datasets"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/group/snippets/group_item.html:36
+#: ckanext/datitrentinoit/templates/group/snippets/group_item.html:37
+msgid "View {name}"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/snippets/search_result_text.html:15
+msgid "{number} dataset found for \"{query}\""
+msgid_plural "{number} datasets found for \"{query}\""
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/datitrentinoit/templates/snippets/search_result_text.html:16
+msgid "Sorry no datasets found for \"{query}\""
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/snippets/search_result_text.html:17
+msgid "{number} dataset found"
+msgid_plural "{number} datasets found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/datitrentinoit/templates/snippets/search_result_text.html:18
+msgid "Sorry no datasets found"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/snippets/search_result_text.html:21
+msgid "{number} category found for \"{query}\""
+msgid_plural "{number} categories found for \"{query}\""
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/datitrentinoit/templates/snippets/search_result_text.html:22
+msgid "Sorry no categories found for \"{query}\""
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/snippets/search_result_text.html:23
+msgid "{number} category found"
+msgid_plural "{number} categories found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/datitrentinoit/templates/snippets/search_result_text.html:24
+msgid "Sorry no categories found"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/snippets/search_result_text.html:27
+msgid "{number} organization found for \"{query}\""
+msgid_plural "{number} organizations found for \"{query}\""
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/datitrentinoit/templates/snippets/search_result_text.html:28
+msgid "Sorry no organizations found for \"{query}\""
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/snippets/search_result_text.html:29
+msgid "{number} organization found"
+msgid_plural "{number} organizations found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ckanext/datitrentinoit/templates/snippets/search_result_text.html:30
+msgid "Sorry no organizations found"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/user/new_user_form.html:5
+msgid "Username"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/user/new_user_form.html:6
+msgid "Full Name"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/user/new_user_form.html:7
+msgid "Email"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/user/new_user_form.html:8
+msgid "Password"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/user/new_user_form.html:9
+msgid "Confirm"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/user/new_user_form.html:28
+msgid "Create Account"
+msgstr ""
+
