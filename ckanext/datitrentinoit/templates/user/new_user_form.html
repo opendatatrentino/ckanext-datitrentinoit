@@ -22,7 +22,9 @@
     </div>
   {% endif %}
 
-<p>Blah</p>
+  <p>
+    {{ _('By registering a user, you agree to our <a href="{tc_url}">Terms and conditions</a> and that you have read our <a href="{pp_url}">Privacy policy</a>.').format(tc_url=h.url_for(controller='ckanext.datitrentinoit.plugin:DatiTrentinoController', action='legal_notes'), pp_url=h.url_for(controller='ckanext.datitrentinoit.plugin:DatiTrentinoController', action='privacy'))|safe }}
+  </p>
 
   <div class="form-actions">
     <button class="btn btn-primary" type="submit" name="save">{{ _("Create Account") }}</button>
