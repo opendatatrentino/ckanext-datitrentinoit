@@ -1,4 +1,4 @@
-# English translations for ckanext-datitrentinoit.
+# English (United Kingdom) translations for ckanext-datitrentinoit.
 # Copyright (C) 2013 ORGANIZATION
 # This file is distributed under the same license as the
 # ckanext-datitrentinoit
@@ -9,15 +9,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-datitrentinoit 0.1.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-04 18:56+0100\n"
-"PO-Revision-Date: 2013-11-04 18:57+0100\n"
+"POT-Creation-Date: 2013-11-11 15:17+0100\n"
+"PO-Revision-Date: 2013-11-11 12:39+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: en <LL@li.org>\n"
+"Language-Team: en_GB <LL@li.org>\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 0.9.6\n"
+"Generated-By: Babel 1.3\n"
 
 #: ckanext/datitrentinoit/templates/group/snippets/group_item.html:26
 msgid "This category has no description"
@@ -118,7 +118,14 @@ msgstr ""
 msgid "Confirm"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/user/new_user_form.html:28
+#: ckanext/datitrentinoit/templates/user/new_user_form.html:26
+msgid ""
+"By registering a user, you agree to our <a href=\"{tc_url}\">Terms and "
+"conditions</a> and that you have read our <a href=\"{pp_url}\">Privacy "
+"policy</a>."
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/user/new_user_form.html:30
 msgid "Create Account"
 msgstr ""
 
