@@ -1,19 +1,16 @@
-Ckan plugin for dati.trentino.it
-################################
+# Ckan plugin for dati.trentino.it
 
-Ckan_ plugin containing customizations for http://dati.trentino.it
+[Ckan] plugin containing customizations for http://dati.trentino.it
 
-.. _Ckan: http://ckan.org
+[Ckan]: http://ckan.org
 
-Installation
-============
+## Installation
 
 1. Install this package
 2. Add ``datitrentinoit`` to Ckan plugins
 
 
-Translations
-============
+## Translations
 
 * Install babel + jinja (contains a babel extractor)
 * Use babel commands: ``extract_messages``, ``init_catalog``,
