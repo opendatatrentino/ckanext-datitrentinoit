@@ -24,7 +24,7 @@
 <div class="homepage-slider-ng">
   <div class="images-wrapper">
 
-    <div class="text-wrapper" style="background-image: url(/images/home-slider/dolomiti.jpg)">
+    <div class="text-wrapper" style="background-image: url(/images/home-slider/meteo_montagne.jpg)">
       <div class="text-container">
 	<h3>Che tempo fa, oggi, in Trentino</h3>
 	<div class="text-row">
@@ -37,7 +37,7 @@
       </div>
     </div>
 
-    <div class="text-wrapper" style="background-image:  url(/images/home-slider/vigneto.jpg); display: none;">
+    <div class="text-wrapper" style="background-image:  url(/images/home-slider/prodotti_tipici_vigneto.jpg); display: none;">
       <div class="text-container">
 	<h3>DOP, IGT, SGP</h3>
 	<div class="text-row">
@@ -50,7 +50,7 @@
       </div>
     </div>
 
-    <div class="text-wrapper" style="background-image:  url(/images/home-slider/cielo.jpg); display: none;">
+    <div class="text-wrapper" style="background-image:  url(/images/home-slider/partecipa_neve.jpg); display: none;">
       <div class="text-container">
 	<h3>Partecipa</h3>
 	<div class="text-row">
@@ -121,16 +121,16 @@
 
 
 {% block secondary_content %}
-  <div class="row group-listing" style="margin-top: 10px;">
-    {% for group in c.group_package_stuff %}
-    <div class="span6">
-      <div class="box">
-	{% snippet 'snippets/group_item.html', group=group.group_dict, truncate=100 %}
-	<div class="featured ribbon"><em>Featured</em></div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
+  {# <div class="row group-listing" style="margin-top: 10px;"> #}
+  {#   {% for group in c.group_package_stuff %} #}
+  {#   <div class="span6"> #}
+  {#     <div class="box"> #}
+  {# 	{% snippet 'snippets/group_item.html', group=group.group_dict, truncate=100 %} #}
+  {# 	<div class="featured ribbon"><em>Featured</em></div> #}
+  {#     </div> #}
+  {#   </div> #}
+  {#   {% endfor %} #}
+  {# </div> #}
 
   <div class="row group-listing" style="margin-top: 10px;">
     <div class="span6">
