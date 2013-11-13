@@ -12,12 +12,15 @@
   </a></li>
   <li><a href="/revision/list?format=atom"><i class="icon-rss"></i> Atom Feed</a></li>
   <li><a href="{{ h.url_for(controller='ckanext.datitrentinoit.plugin:DatiTrentinoController', action='acknowledgements') }}">
+      <i class="icon-user"></i>
       {{ _('Acknowledgements') }}
   </a></li>
   <li><a href="{{ h.url_for(controller='ckanext.datitrentinoit.plugin:DatiTrentinoController', action='legal_notes') }}">
+      <i class="icon-legal"></i>
       {{ _('Legal notes') }}
   </a></li>
   <li><a href="{{ h.url_for(controller='ckanext.datitrentinoit.plugin:DatiTrentinoController', action='privacy') }}">
+      <i class="icon-key"></i>
       {{ _('Privacy') }}
   </a></li>
 {% endblock %}
