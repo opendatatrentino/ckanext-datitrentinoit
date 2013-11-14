@@ -1,15 +1,58 @@
-{% ckan_extends %}
+<!DOCTYPE html>{% set lang = h.lang() %}
+<!--[if IE 7]> <html lang="{{ lang }}" class="ie ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="{{ lang }}" class="ie ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="{{ lang }}" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="{{ lang }}"> <!--<![endif]-->
+<head>
 
-{% block meta %}
-  {{ super() }}
-  <link
-     rel="alternate"
-     type="application/atom+xml"
-     title="{{ g.site_title }} Atom Feed"
-     href="/revision/list?format=atom" />
-{% endblock %}
+{%- block meta -%}
+  <meta charset="utf-8" />
+  <meta name="generator" content="ckan {{ c.__version__ }}" />
+{%- endblock -%}
 
-{% block styles %}
-  {{ super() }}
-  {% resource 'ckanext-datitrentinoit/styles/datitrentinoit.css' %}
-{% endblock %}
+<title>
+  {%- block title -%}
+    {%- block subtitle %}{% endblock -%}
+    {%- if self.subtitle()|trim %} {{ g.template_title_deliminater }} {% endif -%}
+    {{ g.site_title }}
+  {%- endblock -%}
+</title>
+
+{%- block links -%}
+  <link rel="shortcut icon" href="{{ g.favicon }}" />
+  <link rel="alternate" type="application/atom+xml" title="{{ g.site_title }} Atom Feed" href="/revision/list?format=atom" />
+{%- endblock -%}
+
+{%- block styles -%}
+  <link rel="stylesheet" type="text/css" href="/static/css/vendor.css" />
+  <!--[if IE 8]> <link rel="stylesheet" type="text/css" href="/static/css/vendor-ie.css" /> <![endif]-->
+  <link rel="stylesheet" type="text/css" href="/static/css/main.css" />
+
+  {# Custom CSS #}
+  <link rel="stylesheet" type="text/css" href="/static/css/datitrentino.css" />
+{%- endblock -%}
+
+{# {% block head_extras %} #}
+{#   {{ g.template_head_end | safe }} #}
+{# {% endblock %} #}
+
+{# {%- block custom_styles %} #}
+{#   {%- if g.site_custom_css -%} #}
+{#     <style> #}
+{#       {{ g.site_custom_css | safe }} #}
+{#     </style> #}
+{#   {%- endif %} #}
+{# {% endblock %} #}
+
+</head>
+<body data-site-root="{{ h.url('/', locale='default', qualified=true) }}" data-locale-root="{{ h.url('/', qualified=true) }}" data-api-root="{{ g.api_url }}">
+    {%- block page %}{% endblock -%}
+
+    {%- block scripts -%}
+    {%- endblock -%}
+
+    {# {% block body_extras -%} #}
+    {#   {{ g.template_footer_end | safe }} #}
+    {# {%- endblock %} #}
+  </body>
+</html>
