@@ -2,17 +2,17 @@
 
 
 {% block content %}
+
   {{ self.primary_content() }}
 
-<div class="container">
-  {{ self.flash() }}
-</div>
+  <div class="container">{{ self.flash() }}</div>
 
   <div class="main homepage">
     <div class="container">
       {{ self.secondary_content() }}
     </div>
   </div>
+
 {% endblock %}
 
 
@@ -24,103 +24,97 @@
 <div class="homepage-slider-ng">
   <div class="images-wrapper">
 
-    <div class="text-wrapper" style="background-image: url(/images/home-slider/meteo_montagne.jpg)">
+    <div class="text-wrapper" style="background-image:url(/images/home-slider/meteo_montagne.jpg)">
       <div class="text-container">
-	<div><h3>Che tempo fa, oggi, in Trentino</h3></div>
-	<div>
-	<span class="text-row">
-	  tutti i <a href="/group/cat-meteo">dataset sul meteo</a>:
-	  le previsioni giornaliere, le previsioni
-	</span>
-	</div>
-	<div>
-	<span class="text-row">
-	  in montagna, le probabilit&agrave; di pioggia
-	</span>
-	</div>
+        <div><h3>Che tempo fa, oggi, in Trentino</h3></div>
+        <div>
+          <span class="text-row">
+            tutti i <a href="/group/cat-meteo">dataset sul meteo</a>:
+            le previsioni giornaliere, le previsioni
+          </span>
+        </div>
+        <div>
+          <span class="text-row">
+            in montagna, le probabilit&agrave; di pioggia
+          </span>
+        </div>
       </div>
     </div>
 
-    <div class="text-wrapper" style="background-image:  url(/images/home-slider/prodotti_tipici_vigneto.jpg); display: none;">
+    <div class="text-wrapper" style="background-image:url(/images/home-slider/prodotti_tipici_vigneto.jpg);display:none;">
       <div class="text-container">
-	<div><h3>DOP, IGT, SGP</h3></div>
-	<div class="text-row">
-	  i prodotti tipici che danno sapore alla Provincia di Trento
-	</div><br>
-	<div class="text-row">
-	  <a href="/dataset?tags=prodotti+tipici">
-	    Clicca qui per scoprire di pi&ugrave;</a>
-	</div>
+        <div><h3>DOP, IGT, SGP</h3></div>
+        <div class="text-row">
+          i prodotti tipici che danno sapore alla Provincia di Trento
+        </div><br>
+          <div class="text-row">
+            <a href="/dataset?tags=prodotti+tipici">
+              Clicca qui per scoprire di pi&ugrave;</a>
+          </div>
       </div>
     </div>
 
-    <div class="text-wrapper" style="background-image:  url(/images/home-slider/partecipa_neve.jpg); display: none;">
+    <div class="text-wrapper" style="background-image:url(/images/home-slider/partecipa_neve.jpg);display:none;">
       <div class="text-container">
-	<div><h3>Partecipa</h3></div>
-	<div>
-	  <span class="text-row">
-	    Ci sono dati che vorresti fossero resi disponibili?
-	  </span>
-	</div>
-	<div>
-	  <span class="text-row">
-	    Hai un idea che usi i dataset del catalogo?
-	  </span>
-	  <span class="text-row">
-	    Scrivi a <a href="mailto:info&#64;dati.trentino.it">info&#64;dati.trentino.it</a>
-	  </span>
-	</div>
+        <div><h3>Partecipa</h3></div>
+        <div>
+          <span class="text-row">
+            Ci sono dati che vorresti fossero resi disponibili?
+          </span>
+        </div>
+        <div>
+          <span class="text-row">
+            Hai un idea che usi i dataset del catalogo?
+          </span>
+          <span class="text-row">
+            Scrivi a <a href="mailto:info&#64;dati.trentino.it">info&#64;dati.trentino.it</a>
+          </span>
+        </div>
       </div>
     </div>
 
   </div>
 
-  <div class="boxes-wrapper container">
-  <div class="row">
+  {# ---------- Container for boxes ---------- #}
+  <div class="boxes-wrapper container"><div class="row">
 
-    <div class="span6">
-      <div class="home-box">
-   	<h3>
-	  {{ _('Popular Tags') }}
-	</h3>
-   	{% set tags = h.get_facet_items_dict('tags', limit=10) %}
-   	<ul class="tag-list-2">
-   	  {% for tag in tags %}
-   	  <li>
-	    <a class="tag-item"
-	       href="{% url_for controller='package', action='search', tags=tag.name %}">
-	      {{ h.truncate(tag.display_name, 22) }}
-	    </a>
-	  </li>
-   	  {% endfor %}
-   	</ul>
-      </div>
-    </div><!-- .span6 -->
+      <div class="span6"><div class="home-box">
+          <h3>{{ _('Popular Tags') }}</h3>
+          {% set tags = h.get_facet_items_dict('tags', limit=10) %}
+          <ul class="tag-list-2">
+            {% for tag in tags %}
+              <li>
+                <a class="tag-item" href="{% url_for controller='package', action='search', tags=tag.name %}">
+                   {{ h.truncate(tag.display_name, 22) }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+      </div></div><!-- .span6 (tags box) -->
 
-    <div class="span6">
-      <div class="home-box">
-	<h3>{{ _("Find data") }}</h3>
-	<p>{% trans %}Search for data, and get updates from datasets and groups that you're interested in.{% endtrans %}</p>
-	<form class="dataset-search clearfix"
-	      method="get"
-	      action="{% url_for controller='package', action='search' %}">
-	  <span class="btn-group search-giant">
-	    <input type="text"
-		   class="search"
-		   name="q"
-		   value="{{ c.q }}"
-		   autocomplete="off"
-		   placeholder="{{ _('Search') }}" />
-	    <button type="submit"
-		    value="{{ _('Search') }}"
-		    class="btn btn-primary">
-	      <i class="icon-search"></i> Search</button>
-	  </span>
-	</form>
-      </div><!-- .home-box -->
-    </div><!-- .span6 -->
+      <div class="span6"><div class="home-box">
+          <h3>{{ _("Find data") }}</h3>
+          <p>{% trans %}Search for data, and get updates from datasets and groups that you're interested in.{% endtrans %}</p>
+          <form class="dataset-search clearfix"
+                method="get"
+                action="{% url_for controller='package', action='search' %}">
+                <span class="btn-group search-giant">
+                  <input type="text"
+                         class="search"
+                         name="q"
+                         value="{{ c.q }}"
+                         autocomplete="off"
+                         placeholder="{{ _('Search') }}" />
+                  <button type="submit"
+                          value="{{ _('Search') }}"
+                          class="btn btn-primary">
+                          <i class="icon-search"></i> Search
+                  </button>
+                </span>
+          </form>
+      </div></div><!-- ( / search box ) -->
 
-  </div><!-- .row.boxes-wrapper -->
+    </div><!-- .row.boxes-wrapper -->
   </div><!-- .container -->
 </div>
 
@@ -133,39 +127,45 @@
   {#   {% for group in c.group_package_stuff %} #}
   {#   <div class="span6"> #}
   {#     <div class="box"> #}
-  {# 	{% snippet 'snippets/group_item.html', group=group.group_dict, truncate=100 %} #}
-  {# 	<div class="featured ribbon"><em>Featured</em></div> #}
+  {#    {% snippet 'snippets/group_item.html', group=group.group_dict, truncate=100 %} #}
+  {#    <div class="featured ribbon"><em>Featured</em></div> #}
   {#     </div> #}
   {#   </div> #}
   {#   {% endfor %} #}
   {# </div> #}
 
   <div class="row group-listing" style="margin-top: 10px;">
-    <div class="span6">
-      <div class="box">
-	<section class="group-list module module-narrow module-shallow" style="height: 300px;">
-	  <header class="module-heading">
-	    <h3 class="media-heading">Placeholder block</h3>
-	    <p>Block subtitle goes here</p>
-	  </header>
-	  <p style="padding: 15px;">
-	    Qui c'é spazio per qualcosa tipo le applicazioni, altri "featured", ...
-	  </p>
-	</section>
-      </div>
-    </div>
 
+    {# ---------- Empty block ---------- #}
+    <div class="span6"><div class="box">
+        <section class="group-list module module-narrow module-shallow" style="height: 300px;">
+          <header class="module-heading" style="position:relative;">
+            <a href="/revision/list?format=atom" class="no-underline" style="position:absolute;top:15px;right:15px;" title="Atom Feed"><i class="icon-rss-sign icon-2x" style="color:#f90;"></i></a>
+            <h3 class="media-heading">{{ _("Latest changes") }}</h3>
+            <p>{{ _("See which are the most recent changes to datasets.") }}</p>
+          </header>
+          <p style="padding: 15px;">
+            <strong>Note:</strong> list of latest datasets will pop up here!
+            <p style="text-align:center;">
+              <a href="/revision/list?format=atom" class="no-underline" style="color:#000;font-size:80px;" title="Atom Feed">
+                <i class="icon-rss" style="color:#f90;font-size:80px;"></i> Feed</a>
+            </p>
+          </p>
+        </section>
+    </div></div>
+
+    {# ---------- Twitter timeline box ---------- #}
     <div class="span6">
       <div class="box">
-	<section class="group-list module module-narrow module-shallow">
+        <section class="group-list module module-narrow module-shallow">
       <a class="twitter-timeline"
-	 {# href="https://twitter.com/search?q=%23opendatatrentino+OR+%23opendataitaly+%2Bexclude%3Aretweets" #}
-	 href="https://twitter.com/search?q=%23opendatatrentino+%2Bexclude%3Aretweets"
-	 data-screen-name="DatiTrentinoIt"
-	 data-widget-id="370179043032719362">
-	Tweet su #opendatatrentino</a>
+         {# href="https://twitter.com/search?q=%23opendatatrentino+OR+%23opendataitaly+%2Bexclude%3Aretweets" #}
+         href="https://twitter.com/search?q=%23opendatatrentino+%2Bexclude%3Aretweets"
+         data-screen-name="DatiTrentinoIt"
+         data-widget-id="370179043032719362">
+        Tweet su #opendatatrentino</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-	</section>
+        </section>
       </div>
     </div>
 
