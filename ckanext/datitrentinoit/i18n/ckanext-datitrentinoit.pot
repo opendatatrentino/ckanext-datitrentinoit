@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-datitrentinoit 0.1.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-13 11:13+0100\n"
+"POT-Creation-Date: 2013-11-15 16:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,34 +26,33 @@ msgstr ""
 msgid "Frequently Asked Questions"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/footer.html:15
+#: ckanext/datitrentinoit/templates/footer.html:16
 #: ckanext/datitrentinoit/templates/pages/acknowledgements.html:3
 #: ckanext/datitrentinoit/templates/pages/acknowledgements.html:7
-#: ckanext/datitrentinoit/templates/pages/acknowledgements.html:17
 msgid "Acknowledgements"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/footer.html:18
+#: ckanext/datitrentinoit/templates/footer.html:20
 #: ckanext/datitrentinoit/templates/pages/legal_notes.html:5
 #: ckanext/datitrentinoit/templates/pages/legal_notes.html:9
 msgid "Legal notes"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/footer.html:21
+#: ckanext/datitrentinoit/templates/footer.html:24
 #: ckanext/datitrentinoit/templates/pages/privacy.html:5
 #: ckanext/datitrentinoit/templates/pages/privacy.html:9
 msgid "Privacy"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/footer.html:27
+#: ckanext/datitrentinoit/templates/footer.html:30
 msgid "CKAN API"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/footer.html:28
+#: ckanext/datitrentinoit/templates/footer.html:31
 msgid "Open Knowledge Foundation"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/footer.html:35
+#: ckanext/datitrentinoit/templates/footer.html:38
 msgid ""
 "<strong>Powered by</strong> <a class=\"hide-text ckan-footer-logo\" "
 "href=\"http://ckan.org\">CKAN</a>"
@@ -194,16 +193,22 @@ msgstr ""
 msgid "View {name}"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/home/index.html:76
+#: ckanext/datitrentinoit/templates/home/index.html:84
 msgid "Popular Tags"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/home/index.html:94
+#: ckanext/datitrentinoit/templates/home/index.html:102
 msgid "Find data"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/home/index.html:106
-#: ckanext/datitrentinoit/templates/home/index.html:108
+#: ckanext/datitrentinoit/templates/home/index.html:103
+msgid ""
+"Search for data, and get updates from datasets and groups that you're "
+"interested in."
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/home/index.html:113
+#: ckanext/datitrentinoit/templates/home/index.html:115
 msgid "Search"
 msgstr ""
 
