@@ -26,20 +26,24 @@
 
     <div class="text-wrapper" style="background-image: url(/images/home-slider/meteo_montagne.jpg)">
       <div class="text-container">
-	<h3>Che tempo fa, oggi, in Trentino</h3>
-	<div class="text-row">
+	<div><h3>Che tempo fa, oggi, in Trentino</h3></div>
+	<div>
+	<span class="text-row">
 	  tutti i <a href="/group/cat-meteo">dataset sul meteo</a>:
 	  le previsioni giornaliere, le previsioni
+	</span>
 	</div>
-	<div class="text-row">
+	<div>
+	<span class="text-row">
 	  in montagna, le probabilit&agrave; di pioggia
+	</span>
 	</div>
       </div>
     </div>
 
     <div class="text-wrapper" style="background-image:  url(/images/home-slider/prodotti_tipici_vigneto.jpg); display: none;">
       <div class="text-container">
-	<h3>DOP, IGT, SGP</h3>
+	<div><h3>DOP, IGT, SGP</h3></div>
 	<div class="text-row">
 	  i prodotti tipici che danno sapore alla Provincia di Trento
 	</div><br>
@@ -52,15 +56,19 @@
 
     <div class="text-wrapper" style="background-image:  url(/images/home-slider/partecipa_neve.jpg); display: none;">
       <div class="text-container">
-	<h3>Partecipa</h3>
-	<div class="text-row">
-	  Hai un idea che usi i dataset del catalogo?
+	<div><h3>Partecipa</h3></div>
+	<div>
+	  <span class="text-row">
+	    Ci sono dati che vorresti fossero resi disponibili?
+	  </span>
 	</div>
-	<div class="text-row">
-	  Ci sono dati che vorresti fossero resi disponibili?
-	</div>
-	<div class="text-row">
-	  Scrivi a <a href="mailto:info&#64;dati.trentino.it">info&#64;dati.trentino.it</a>
+	<div>
+	  <span class="text-row">
+	    Hai un idea che usi i dataset del catalogo?
+	  </span>
+	  <span class="text-row">
+	    Scrivi a <a href="mailto:info&#64;dati.trentino.it">info&#64;dati.trentino.it</a>
+	  </span>
 	</div>
       </div>
     </div>
@@ -92,8 +100,7 @@
     <div class="span6">
       <div class="home-box">
 	<h3>{{ _("Find data") }}</h3>
-	<p>Search for data, and get updates from datasets and groups
-	  that you're interested in.</p>
+	<p>{% trans %}Search for data, and get updates from datasets and groups that you're interested in.{% endtrans %}}</p>
 	<form class="dataset-search clearfix"
 	      method="get"
 	      action="{% url_for controller='package', action='search' %}">
