@@ -100,7 +100,7 @@
     <div class="span6">
       <div class="home-box">
 	<h3>{{ _("Find data") }}</h3>
-	<p>{% trans %}Search for data, and get updates from datasets and groups that you're interested in.{% endtrans %}}</p>
+	<p>{% trans %}Search for data, and get updates from datasets and groups that you're interested in.{% endtrans %}</p>
 	<form class="dataset-search clearfix"
 	      method="get"
 	      action="{% url_for controller='package', action='search' %}">
@@ -128,6 +128,7 @@
 
 
 {% block secondary_content %}
+
   {# <div class="row group-listing" style="margin-top: 10px;"> #}
   {#   {% for group in c.group_package_stuff %} #}
   {#   <div class="span6"> #}
