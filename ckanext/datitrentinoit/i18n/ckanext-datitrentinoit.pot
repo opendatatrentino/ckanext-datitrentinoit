@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-datitrentinoit 0.1.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-15 16:47+0100\n"
+"POT-Creation-Date: 2013-11-15 18:02+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
+
+#: ckanext/datitrentinoit/templates/base.html:8
+msgid "{title} Atom Feed"
+msgstr ""
 
 #: ckanext/datitrentinoit/templates/footer.html:7
 msgid "About {0}"
@@ -193,23 +197,31 @@ msgstr ""
 msgid "View {name}"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/home/index.html:84
+#: ckanext/datitrentinoit/templates/home/index.html:82
 msgid "Popular Tags"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/home/index.html:102
+#: ckanext/datitrentinoit/templates/home/index.html:96
 msgid "Find data"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/home/index.html:103
+#: ckanext/datitrentinoit/templates/home/index.html:97
 msgid ""
 "Search for data, and get updates from datasets and groups that you're "
 "interested in."
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/home/index.html:113
-#: ckanext/datitrentinoit/templates/home/index.html:115
+#: ckanext/datitrentinoit/templates/home/index.html:107
+#: ckanext/datitrentinoit/templates/home/index.html:109
 msgid "Search"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/home/index.html:144
+msgid "Latest changes"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/home/index.html:145
+msgid "See which are the most recent changes to datasets."
 msgstr ""
 
 #: ckanext/datitrentinoit/templates/package/base_form_page.html:5
