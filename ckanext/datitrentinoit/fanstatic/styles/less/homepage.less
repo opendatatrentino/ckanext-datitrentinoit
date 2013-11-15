@@ -11,8 +11,10 @@
     text-align: center;
     background: #eee;
     background: rgba(238, 238, 238, .8);
-    border: solid 1px #ddd;
-    border-radius: 3px;
+    border: none;
+    // border: solid 1px #ddd;
+    // border-radius: 3px;
+
     .box-shadow(inset 1px 1px 0 #fff);
     h3 {
 	font-size: 24px;
@@ -87,16 +89,16 @@
 	    width: 900px;
 	    margin: 0 auto;
 
+	    h3, .text-row {
+		background: rgba(0,0,0,.5);
+		padding: 0 10px;
+		display: inline-block;
+		margin: 3px 0;
+	    }
 	    h3 {
 		font-size: 32px;
 		text-transform: uppercase;
-		font-weight: normal;
-	    }
-	    .text-row {
-		background: rgba(0,0,0,.5);
-		display: inline-block;
-		padding: 0 10px;
-		margin: 3px 0;
+		font-weight: bold;
 	    }
 	    a {
 		color: #eee;
@@ -116,6 +118,20 @@
 	z-index: 10 !important;
     }
 }
+
+.rot1{transform:rotate(1deg);-moz-transform:rotate(1deg);-webkit-transform:rotate(1deg);}
+.rot2{transform:rotate(2deg);-moz-transform:rotate(2deg);-webkit-transform:rotate(2deg);}
+.rot3{transform:rotate(3deg);-moz-transform:rotate(3deg);-webkit-transform:rotate(3deg);}
+.rot4{transform:rotate(4deg);-moz-transform:rotate(4deg);-webkit-transform:rotate(4deg);}
+.rot5{transform:rotate(5deg);-moz-transform:rotate(5deg);-webkit-transform:rotate(5deg);}
+.rot6{transform:rotate(6deg);-moz-transform:rotate(6deg);-webkit-transform:rotate(6deg);}
+
+.rotm1{transform:rotate(-1deg);-moz-transform:rotate(-1deg);-webkit-transform:rotate(-1deg);}
+.rotm2{transform:rotate(-2deg);-moz-transform:rotate(-2deg);-webkit-transform:rotate(-2deg);}
+.rotm3{transform:rotate(-3deg);-moz-transform:rotate(-3deg);-webkit-transform:rotate(-3deg);}
+.rotm4{transform:rotate(-4deg);-moz-transform:rotate(-4deg);-webkit-transform:rotate(-4deg);}
+.rotm5{transform:rotate(-5deg);-moz-transform:rotate(-5deg);-webkit-transform:rotate(-5deg);}
+.rotm6{transform:rotate(-6deg);-moz-transform:rotate(-6deg);-webkit-transform:rotate(-6deg);}
 
 // .hero[role="main"] {
 //     background: #222 url(/images/home-slider/dolomiti.jpg) center center;
