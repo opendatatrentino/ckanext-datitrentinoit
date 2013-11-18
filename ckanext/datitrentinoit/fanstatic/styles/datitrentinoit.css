@@ -1,3 +1,9 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
 .nav-item.active > a:before {
   background-image: none;
   width: 0;
@@ -121,12 +127,6 @@
 .no-underline:hover {
   text-decoration: none;
 }
-/*---------------------------------------------------
-    LESS Elements 0.9
-  ---------------------------------------------------
-    A set of useful LESS mixins
-    More info at: http://lesselements.com
-  ---------------------------------------------------*/
 body {
   background-color: #282828;
   background-image: none;
