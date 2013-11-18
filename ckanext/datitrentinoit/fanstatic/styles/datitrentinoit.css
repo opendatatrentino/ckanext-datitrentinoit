@@ -136,6 +136,12 @@ a,
 .btn-link {
   color: #1a5675;
 }
+a {
+  -webkit-transition: all color ease 0.5s ease-out;
+  -moz-transition: all color ease 0.5s ease-out;
+  -o-transition: all color ease 0.5s ease-out;
+  transition: all color ease 0.5s ease-out;
+}
 a:not([href]) {
   cursor: default;
 }
@@ -156,7 +162,7 @@ a:before,
 a:after,
 button,
 input[type="button"] {
-  transition: background-color ease 0.5s, border-color ease 0.5s;
+  transition: background-color ease 0.5s, border-color ease 0.5s, color ease 0.5s;
 }
 h1 a[href^="#"],
 h2 a[href^="#"],
@@ -472,9 +478,10 @@ input[type="color"]:focus,
   border-left-color: #282828;
 }
 .site-footer {
-  background-color: #111;
+  background-color: #161616;
   background-image: none;
   border-top: solid 1px #000;
+  color: rgba(255, 255, 255, 0.6);
 }
 .site-footer .navigation .nav-pills a:hover,
 .site-footer .navigation .nav-pills .active a {
@@ -490,6 +497,12 @@ input[type="color"]:focus,
 }
 .site-footer a {
   color: rgba(255, 255, 255, 0.6);
+}
+.site-footer a:hover {
+  color: #ffffff;
+}
+.site-footer hr {
+  border-color: #303030;
 }
 .attribution small {
   color: rgba(255, 255, 255, 0.6);

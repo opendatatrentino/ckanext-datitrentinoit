@@ -15,6 +15,9 @@ a,
 .btn-link {
     color: darken(@dti-blue, 10%);
 }
+a {
+    .transition(color ease .5s);
+}
 a:not([href]) {
     cursor: default;
     &, &:hover, &:focus {
@@ -32,7 +35,8 @@ a:focus,
 a, a:before, a:after,
 button, input[type="button"] {
     transition: background-color ease .5s,
-                border-color ease .5s;
+                border-color ease .5s,
+		color ease .5s;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -326,9 +330,10 @@ input[type="color"]:focus,
 // Footer
 //----------------------------------------
 .site-footer {
-    background-color: #111;
+    background-color: @footer-bg;
     background-image: none;
     border-top: solid 1px #000;
+    color: fade(@footer-fg, 60%);
 
     .navigation .nav-pills {
 	a:hover,
@@ -344,11 +349,17 @@ input[type="color"]:focus,
     &,
     label,
     small {
-	color: fade(@secondary-fore, 60%);
+	color: fade(@footer-fg, 60%);
     }
 
     a {
-	color: fade(@secondary-fore, 60%);
+	color: fade(@footer-fg, 60%);
+	&:hover {
+	    color: @footer-fg;
+	}
+    }
+    hr {
+	border-color: lighten(@footer-bg, 10%);
     }
 }
 
