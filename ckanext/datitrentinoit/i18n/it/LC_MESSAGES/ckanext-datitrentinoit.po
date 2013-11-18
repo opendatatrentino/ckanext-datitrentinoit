@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: CKAN\n"
 "Report-Msgid-Bugs-To: http://trac.ckan.org/\n"
 "POT-Creation-Date: 2013-11-18 16:55+0100\n"
-"PO-Revision-Date: 2013-11-18 17:02+0100\n"
+"PO-Revision-Date: 2013-11-18 17:07+0100\n"
 "Last-Translator: amercader <amercadero@gmail.com>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/ckan/language/"
 "it/)\n"
@@ -29,7 +29,7 @@ msgstr ""
 
 #: ckanext/datitrentinoit/templates/base.html:8
 msgid "{title} Atom Feed"
-msgstr ""
+msgstr "Feed Atom di {title}"
 
 #: ckanext/datitrentinoit/templates/footer.html:7
 msgid "About {0}"
@@ -54,9 +54,8 @@ msgstr "Note legali"
 #: ckanext/datitrentinoit/templates/footer.html:24
 #: ckanext/datitrentinoit/templates/pages/privacy.html:5
 #: ckanext/datitrentinoit/templates/pages/privacy.html:9
-#, fuzzy
 msgid "Privacy"
-msgstr "Privato"
+msgstr "Privacy"
 
 #: ckanext/datitrentinoit/templates/footer.html:30
 msgid "CKAN API"
@@ -107,24 +106,20 @@ msgid "FAQ"
 msgstr "FAQ"
 
 #: ckanext/datitrentinoit/templates/group/index.html:3
-#, fuzzy
 msgid "Categories of Datasets"
-msgstr "Gruppi di dataset"
+msgstr "Categorie di dataset"
 
 #: ckanext/datitrentinoit/templates/group/index.html:14
-#, fuzzy
 msgid "Add Category"
-msgstr "Aggiungi a:"
+msgstr "Aggiungi Categoria"
 
 #: ckanext/datitrentinoit/templates/group/index.html:22
-#, fuzzy
 msgid "Search categories..."
-msgstr "Lista di ricerca..."
+msgstr "Cerca categorie..."
 
 #: ckanext/datitrentinoit/templates/group/index.html:29
-#, fuzzy
 msgid "There are currently no categories for this site"
-msgstr "Al momento non ci sono gruppi per questo sito"
+msgstr "Al momento non ci sono categorie per questo sito"
 
 #: ckanext/datitrentinoit/templates/group/index.html:31
 msgid "How about creating one?"
@@ -166,9 +161,8 @@ msgid "Description"
 msgstr "Descrizione"
 
 #: ckanext/datitrentinoit/templates/group/snippets/group_form.html:20
-#, fuzzy
 msgid "A little information about my category..."
-msgstr "Alcune informazioni sul mio gruppo..."
+msgstr "Alcune informazioni sulla mia categoria..."
 
 #: ckanext/datitrentinoit/templates/group/snippets/group_form.html:22
 msgid "Image URL"
@@ -193,14 +187,12 @@ msgid "Delete"
 msgstr "Elimina"
 
 #: ckanext/datitrentinoit/templates/group/snippets/group_form.html:80
-#, fuzzy
 msgid "Save Category"
 msgstr "Salva le modifiche"
 
 #: ckanext/datitrentinoit/templates/group/snippets/group_item.html:26
-#, fuzzy
 msgid "This category has no description"
-msgstr "Questo elemento non ha descrizione"
+msgstr "Questa categoria non ha descrizione"
 
 #: ckanext/datitrentinoit/templates/group/snippets/group_item.html:31
 msgid "{num} Dataset"
@@ -239,18 +231,16 @@ msgid "Search"
 msgstr "Cerca"
 
 #: ckanext/datitrentinoit/templates/home/index.html:144
-#, fuzzy
 msgid "Latest changes"
-msgstr "Salva le modifiche"
+msgstr "Ultime modifiche"
 
 #: ckanext/datitrentinoit/templates/home/index.html:145
 msgid "See which are the most recent changes to datasets."
 msgstr ""
 
 #: ckanext/datitrentinoit/templates/package/base_form_page.html:5
-#, fuzzy
 msgid "About datasets"
-msgstr "Dataset totali"
+msgstr "A proposito dei dataset"
 
 #: ckanext/datitrentinoit/templates/package/base_form_page.html:8
 msgid ""
@@ -312,28 +302,24 @@ msgid "Sorry no datasets found"
 msgstr "Spiacente, nessun dataset trovato"
 
 #: ckanext/datitrentinoit/templates/snippets/search_result_text.html:21
-#, fuzzy
 msgid "{number} category found for \"{query}\""
 msgid_plural "{number} categories found for \"{query}\""
-msgstr[0] "{number} dataset trovato per \"{query}\""
-msgstr[1] "{number} dataset trovati per \"{query}\""
+msgstr[0] "{number} categoria trovata per \"{query}\""
+msgstr[1] "{number} categorie trovate per \"{query}\""
 
 #: ckanext/datitrentinoit/templates/snippets/search_result_text.html:22
-#, fuzzy
 msgid "Sorry no categories found for \"{query}\""
-msgstr "Spiacente, nessun dataset trovato per \"{query}\""
+msgstr "Spiacente, nessuna categoria trovata per \"{query}\""
 
 #: ckanext/datitrentinoit/templates/snippets/search_result_text.html:23
-#, fuzzy
 msgid "{number} category found"
 msgid_plural "{number} categories found"
-msgstr[0] "{number} dataset trovato"
-msgstr[1] "{number} dataset trovati"
+msgstr[0] "{number} categoria trovata"
+msgstr[1] "{number} categorie trovate"
 
 #: ckanext/datitrentinoit/templates/snippets/search_result_text.html:24
-#, fuzzy
 msgid "Sorry no categories found"
-msgstr "Spiacente, nessun dataset trovato"
+msgstr "Spiacente, nessuna categoria trovata"
 
 #: ckanext/datitrentinoit/templates/snippets/search_result_text.html:27
 msgid "{number} organization found for \"{query}\""
