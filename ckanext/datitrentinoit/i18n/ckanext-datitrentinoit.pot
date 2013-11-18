@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-datitrentinoit 0.1.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-15 18:02+0100\n"
+"POT-Creation-Date: 2013-11-18 16:55+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -171,6 +171,7 @@ msgid "Are you sure you want to delete this Group?"
 msgstr ""
 
 #: ckanext/datitrentinoit/templates/group/snippets/group_form.html:77
+#: ckanext/datitrentinoit/templates/package/snippets/package_form.html:39
 msgid "Delete"
 msgstr ""
 
@@ -247,6 +248,24 @@ msgstr ""
 
 #: ckanext/datitrentinoit/templates/package/search.html:4
 msgid "Add Dataset"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/package/snippets/package_form.html:33
+msgid ""
+"Important: by submitting content, you agree to our <a href=\"{tc_url}\">Terms"
+" and conditions</a>."
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/package/snippets/package_form.html:38
+msgid "Are you sure you want to delete this dataset?"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/package/snippets/package_form.html:43
+msgid "Cancel"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/package/snippets/package_form.html:45
+msgid "Next: Add Data"
 msgstr ""
 
 #: ckanext/datitrentinoit/templates/snippets/search_result_text.html:15
