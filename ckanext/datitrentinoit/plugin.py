@@ -4,7 +4,8 @@
 from collections import OrderedDict
 
 from ckan.plugins import (implements, SingletonPlugin, IConfigurer,
-                          IRoutes, IDatasetForm, ITemplateHelpers)
+                          IConfigurable, IRoutes, IDatasetForm,
+                          ITemplateHelpers)
 import ckan.lib.base as base
 import ckan.plugins.toolkit as plugins_toolkit
 import routes.mapper as routes_mapper
@@ -18,7 +19,9 @@ class DatiTrentinoPlugin(SingletonPlugin):
     """Controller used to load custom templates/resources/pages"""
 
     implements(IConfigurer)
+    implements(IConfigurable)
     implements(IRoutes)
+    implements(ITemplateHelpers)
 
     ## Implementation of IConfigurer :(
     ##------------------------------------------------------------
@@ -27,6 +30,15 @@ class DatiTrentinoPlugin(SingletonPlugin):
         plugins_toolkit.add_public_directory(config, 'public')
         plugins_toolkit.add_template_directory(config, 'templates')
         plugins_toolkit.add_resource('fanstatic', 'ckanext-datitrentinoit')
+
+    ## Implementation of IConfigurable :(
+    ##------------------------------------------------------------
+
+    def configure(self, config):
+        self.ga_conf = {
+            'id': config.get('googleanalytics.id'),
+            'domain': config.get('googleanalytics.domain'),
+        }
 
     ## Implementation of IRoutes :(
     ##------------------------------------------------------------
@@ -41,6 +53,21 @@ class DatiTrentinoPlugin(SingletonPlugin):
 
     def after_map(self, routes):
         return routes
+
+    ## Implementation of ITemplateHelpers :(
+    ##------------------------------------------------------------
+
+    def get_helpers(self):
+        return {
+            'dti_ga_site_id': self._get_ga_site_id,
+            'dti_ga_site_domain': self._get_ga_site_domain,
+        }
+
+    def _get_ga_site_id(self):
+        return self.ga_conf['id']
+
+    def _get_ga_site_domain(self):
+        return self.ga_conf['domain']
 
 
 class DatiTrentinoController(base.BaseController):
