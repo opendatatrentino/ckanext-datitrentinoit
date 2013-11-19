@@ -1,6 +1,8 @@
 ## Plugin for http://dati.trentino.it
 ## Ckan: 2.2a
 
+from collections import OrderedDict
+
 from ckan.plugins import (implements, SingletonPlugin, IConfigurer,
                           IRoutes, IDatasetForm, ITemplateHelpers)
 import ckan.lib.base as base
@@ -64,38 +66,41 @@ class DatiTrentinoFormPlugin(SingletonPlugin,
     implements(IDatasetForm)
     implements(ITemplateHelpers)
 
-    _custom_text_fields = {
-        'Aggiornamento': {
+    _custom_text_fields = OrderedDict([
+        ('Aggiornamento', {
             'form_help': "es. mensile, giornaliero, annuale",
-        },
-        'Titolare': {
+        }),
+        ('Titolare', {
             'form_help': "es. Provincia Autonoma di Trento",
-        },
-        'Codifica Caratteri': {
+        }),
+        ('Codifica Caratteri', {
             'form_help': "es. utf-8",
-        },
-        'Copertura Temporale (Data di fine)': {
+        }),
+        ('Copertura Temporale (Data di fine)', {
             'form_help': "giorno/mese/anno",
-        },
-        'Copertura Temporale (Data di inizio)': {
+        }),
+        ('Copertura Temporale (Data di inizio)', {
             'form_help': "giorno/mese/anno",
-        },
-        'Data di aggiornamento': {
+        }),
+        ('Copertura Geografica', {
+            'form_help': "es. Comune di Trento",
+        }),
+        ('Data di aggiornamento', {
             'form_help': "giorno/mese/anno",
-        },
-        'Data di creazione': {
+        }),
+        ('Data di creazione', {
             'form_help': "giorno/mese/anno",
-        },
-        'Data di pubblicazione': {
+        }),
+        ('Data di pubblicazione', {
             'form_help': "giorno/mese/anno",
-        },
-        'Descrizione campi': {
+        }),
+        ('Descrizione campi', {
             'form_help': "",
-        },
-        'URL sito': {
+        }),
+        ('URL sito', {
             'form_help': "",
-        },
-    }
+        }),
+    ])
 
     def get_helpers(self):
         return {
