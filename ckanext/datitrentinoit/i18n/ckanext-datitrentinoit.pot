@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-datitrentinoit 0.1.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-18 16:55+0100\n"
+"POT-Creation-Date: 2013-11-20 16:08+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,41 +22,41 @@ msgstr ""
 msgid "{title} Atom Feed"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/footer.html:7
+#: ckanext/datitrentinoit/templates/footer.html:13
 msgid "About {0}"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/footer.html:11
+#: ckanext/datitrentinoit/templates/footer.html:17
 msgid "Frequently Asked Questions"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/footer.html:16
+#: ckanext/datitrentinoit/templates/footer.html:22
 #: ckanext/datitrentinoit/templates/pages/acknowledgements.html:3
 #: ckanext/datitrentinoit/templates/pages/acknowledgements.html:7
 msgid "Acknowledgements"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/footer.html:20
+#: ckanext/datitrentinoit/templates/footer.html:26
 #: ckanext/datitrentinoit/templates/pages/legal_notes.html:5
 #: ckanext/datitrentinoit/templates/pages/legal_notes.html:9
 msgid "Legal notes"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/footer.html:24
+#: ckanext/datitrentinoit/templates/footer.html:30
 #: ckanext/datitrentinoit/templates/pages/privacy.html:5
 #: ckanext/datitrentinoit/templates/pages/privacy.html:9
 msgid "Privacy"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/footer.html:30
+#: ckanext/datitrentinoit/templates/footer.html:38
 msgid "CKAN API"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/footer.html:31
+#: ckanext/datitrentinoit/templates/footer.html:39
 msgid "Open Knowledge Foundation"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/footer.html:38
+#: ckanext/datitrentinoit/templates/footer.html:51
 msgid ""
 "<strong>Powered by</strong> <a class=\"hide-text ckan-footer-logo\" "
 "href=\"http://ckan.org\">CKAN</a>"
@@ -198,31 +198,67 @@ msgstr ""
 msgid "View {name}"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/home/index.html:82
+#: ckanext/datitrentinoit/templates/home/index.html:30
+msgid "What's the weather like, today, in Trentino"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/home/index.html:32
+msgid "all the <a href=\"{link}\">weather datasets</a>:"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/home/index.html:35
+msgid "daily forecasts, mountain forecasts, chances of rain"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/home/index.html:42
+msgid "PDO, PGI, TSG"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/home/index.html:44
+msgid "a tasty tour among typical Trentino products"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/home/index.html:48
+msgid "Click here to discover more"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/home/index.html:56
+msgid "Partecipate"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/home/index.html:59
+msgid "Is there any dataset you’d like to be available?"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/home/index.html:64
+msgid "Do you have an idea that uses the datasets in the catalog?"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/home/index.html:67
+msgid "Write to <a href=\"mailto:{email}\">{email}</a>"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/home/index.html:79
 msgid "Popular Tags"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/home/index.html:96
+#: ckanext/datitrentinoit/templates/home/index.html:93
 msgid "Find data"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/home/index.html:97
+#: ckanext/datitrentinoit/templates/home/index.html:94
 msgid ""
 "Search for data, and get updates from datasets and groups that you're "
 "interested in."
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/home/index.html:107
-#: ckanext/datitrentinoit/templates/home/index.html:109
+#: ckanext/datitrentinoit/templates/home/index.html:104
+#: ckanext/datitrentinoit/templates/home/index.html:106
 msgid "Search"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/home/index.html:144
+#: ckanext/datitrentinoit/templates/home/index.html:130
 msgid "Latest changes"
-msgstr ""
-
-#: ckanext/datitrentinoit/templates/home/index.html:145
-msgid "See which are the most recent changes to datasets."
 msgstr ""
 
 #: ckanext/datitrentinoit/templates/package/base_form_page.html:5
@@ -238,11 +274,11 @@ msgid ""
 "        "
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/package/read.html:19
+#: ckanext/datitrentinoit/templates/package/read.html:9
 msgid "Field"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/package/read.html:20
+#: ckanext/datitrentinoit/templates/package/read.html:10
 msgid "Value"
 msgstr ""
 

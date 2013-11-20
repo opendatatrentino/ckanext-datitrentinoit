@@ -27,48 +27,44 @@
 
     <div class="text-wrapper" style="background-image:url(/images/home-slider/meteo_montagne.jpg)">
       <div class="text-container">
-        <div><h3>Che tempo fa, oggi, in Trentino</h3></div>
-        <div>
-          <span class="text-row">
-            tutti i <a href="/group/cat-meteo">dataset sul meteo</a>:
-            le previsioni giornaliere, le previsioni
-          </span>
+        <div><h3>{{ _("What's the weather like, today, in Trentino") }}</h3></div>
+        <div class="text-row">
+          {{ _("all the <a href=\"{link}\">weather datasets</a>:").format(link='/group/cat-meteo')|safe }}
         </div>
-        <div>
-          <span class="text-row">
-            in montagna, le probabilit&agrave; di pioggia
-          </span>
+        <div class="text-row">
+          {{ _("daily forecasts, mountain forecasts, chances of rain")|safe }}
         </div>
       </div>
     </div>
 
     <div class="text-wrapper" style="background-image:url(/images/home-slider/prodotti_tipici_vigneto.jpg);display:none;">
       <div class="text-container">
-        <div><h3>DOP, IGT, SGP</h3></div>
+        <div><h3>{{ _("PDO, PGI, TSG") }}</h3></div>
         <div class="text-row">
-          i prodotti tipici che danno sapore alla Provincia di Trento
+          {{ _("a tasty tour among typical Trentino products") }}
         </div><br>
           <div class="text-row">
             <a href="/dataset?tags=prodotti+tipici">
-              Clicca qui per scoprire di pi&ugrave;</a>
+              {{ _("Click here to discover more") }}
+              </a>
           </div>
       </div>
     </div>
 
     <div class="text-wrapper" style="background-image:url(/images/home-slider/partecipa_neve.jpg);display:none;">
       <div class="text-container">
-        <div><h3>Partecipa</h3></div>
+        <div><h3>{{ _("Partecipate") }}</h3></div>
         <div>
           <span class="text-row">
-            Ci sono dati che vorresti fossero resi disponibili?
+            {{ _("Is there any dataset you’d like to be available?") }}
           </span>
         </div>
         <div>
           <span class="text-row">
-            Hai un idea che usi i dataset del catalogo?
+            {{ _("Do you have an idea that uses the datasets in the catalog?") }}
           </span>
           <span class="text-row">
-            Scrivi a <a href="mailto:info&#64;dati.trentino.it">info&#64;dati.trentino.it</a>
+            {{ _("Write to <a href=\"mailto:{email}\">{email}</a>").format(email='info&#64;dati.trentino.it')|safe }}
           </span>
         </div>
       </div>
@@ -124,17 +120,6 @@
 
 {% block secondary_content %}
 
-  {# <div class="row group-listing" style="margin-top: 10px;"> #}
-  {#   {% for group in c.group_package_stuff %} #}
-  {#   <div class="span6"> #}
-  {#     <div class="box"> #}
-  {#    {% snippet 'snippets/group_item.html', group=group.group_dict, truncate=100 %} #}
-  {#    <div class="featured ribbon"><em>Featured</em></div> #}
-  {#     </div> #}
-  {#   </div> #}
-  {#   {% endfor %} #}
-  {# </div> #}
-
   <div class="row group-listing" style="margin-top: 10px;">
 
     {# ---------- Latest changes block ---------- #}
@@ -146,11 +131,11 @@
             {# <p>{{ _("See which are the most recent changes to datasets.") }}</p> #}
           </header>
 
-	  <div id="latest-changes">
+          <div id="latest-changes">
             <p style="padding: 15px;text-align:center;">
               <a href="/revision/list?format=atom" class="no-underline" style="color:#000;font-size:80px;" title="Atom Feed"><i class="icon-rss" style="color:#f90;font-size:80px;"></i> Feed</a>
             </p>
-	  </div>
+          </div>
 
         </section>
     </div></div>
