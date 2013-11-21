@@ -1,7 +1,10 @@
 ## Plugin for http://dati.trentino.it
 ## Ckan: 2.2a
 
-from collections import OrderedDict
+try:
+    from collections import OrderedDict
+except ImportError:
+    from ordereddict import OrderedDict
 
 from ckan.plugins import (implements, SingletonPlugin, IConfigurer,
                           IConfigurable, IRoutes, IDatasetForm,

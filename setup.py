@@ -1,4 +1,5 @@
 from setuptools import setup, find_packages
+import sys
 
 version = '0.1.1'
 
@@ -12,6 +13,10 @@ entry_points = {
         'ckan = ckan.lib.extract:extract_ckan',
     ],
 }
+
+install_requires = []
+if sys.version_info < (2, 7):
+    install_requires.append('ordereddict')
 
 setup(
     name='ckanext-datitrentinoit',
