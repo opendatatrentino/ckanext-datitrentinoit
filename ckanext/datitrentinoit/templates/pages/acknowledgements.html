@@ -1,4 +1,5 @@
 {% extends "page.html" %}
+{% set lang = h.lang() %}
 
 {% block subtitle %}{{ _('Acknowledgements') }}{% endblock %}
 
@@ -13,9 +14,11 @@
 {% block primary %}
   <article class="module">
     <div class="module-content">
-      {% block about %}
-          {% snippet 'pages/acknowledgements_text.html' %}
-      {% endblock %}
+	{% if lang == 'it' %}
+	  {% snippet 'pages/acknowledgements_text_it.html' %}
+	{% else %}
+	  {% snippet 'pages/acknowledgements_text.html' %}
+	{% endif %}
     </div>
   </article>
 {% endblock %}
