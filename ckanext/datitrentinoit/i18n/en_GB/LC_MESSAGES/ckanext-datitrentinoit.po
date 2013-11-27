@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-datitrentinoit 0.1.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-27 16:51+0100\n"
+"POT-Creation-Date: 2013-11-27 16:58+0100\n"
 "PO-Revision-Date: 2013-11-11 12:39+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en_GB <LL@li.org>\n"
@@ -372,6 +372,28 @@ msgstr[1] ""
 
 #: ckanext/datitrentinoit/templates/snippets/search_result_text.html:30
 msgid "Sorry no organizations found"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/user/new.html:3
+msgid "Register"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/user/new.html:6
+msgid "Registration"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/user/new.html:13
+msgid "Register for an Account"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/user/new.html:22
+msgid "Why Sign Up?"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/user/new.html:24
+msgid ""
+"To keep you up to date about the catalog activities and to follow updates"
+" about datasets you are interested in."
 msgstr ""
 
 #: ckanext/datitrentinoit/templates/user/new_user_form.html:5
