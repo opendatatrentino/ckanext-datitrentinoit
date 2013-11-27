@@ -130,11 +130,11 @@ msgstr "Informazioni sulle categorie"
 
 #: ckanext/datitrentinoit/templates/group/index.html:51
 msgid ""
-"Categories group datasets into specific homogeneous fields of economic "
-"and/or functional areas."
+"Categories group datasets into specific homogeneous fields of economic and/"
+"or functional areas."
 msgstr ""
-"Le categorie presentano i dataset entro specifici ambiti omogenei di "
-"settori economici e/o funzionali."
+"Le categorie presentano i dataset entro specifici ambiti omogenei di settori "
+"economici e/o funzionali."
 
 #: ckanext/datitrentinoit/templates/group/snippets/group_form.html:10
 msgid "Name"
@@ -293,17 +293,15 @@ msgstr "A proposito dei dataset"
 #: ckanext/datitrentinoit/templates/package/base_form_page.html:8
 msgid ""
 "\n"
-"        A CKAN Dataset is a collection of data resources (such as files),"
-"\n"
-"        together with a description and other information, at a fixed "
-"URL.\n"
+"        A CKAN Dataset is a collection of data resources (such as files),\n"
+"        together with a description and other information, at a fixed URL.\n"
 "        Datasets are what users see when searching for data.\n"
 "        "
 msgstr ""
 "\n"
 "Un Dataset è una raccolta di sorgenti di dati (es. file), insieme a una "
-"descrizione e altre informazioni, a un preciso URL. I dataset sono quello"
-" che gli utenti vedono cercando dati."
+"descrizione e altre informazioni, a un preciso URL. I dataset sono quello "
+"che gli utenti vedono cercando dati."
 
 #: ckanext/datitrentinoit/templates/package/read.html:9
 msgid "Field"
@@ -341,7 +339,7 @@ msgstr "Prossimo: Aggiungi Dati"
 #: ckanext/datitrentinoit/templates/related/dashboard.html:9
 #: ckanext/datitrentinoit/templates/related/dashboard.html:16
 msgid "Apps & Ideas"
-msgstr ""
+msgstr "Apps & Idee"
 
 #: ckanext/datitrentinoit/templates/related/dashboard.html:21
 #, python-format
@@ -362,50 +360,52 @@ msgstr ""
 
 #: ckanext/datitrentinoit/templates/related/dashboard.html:29
 msgid "There have been no apps submitted yet."
-msgstr ""
+msgstr "Non sono state ancora inviate app."
 
 #: ckanext/datitrentinoit/templates/related/dashboard.html:48
 msgid "What are applications?"
-msgstr ""
+msgstr "Cosa sono le applicazioni?"
 
 #: ckanext/datitrentinoit/templates/related/dashboard.html:51
 msgid ""
 "On this page are listed the apps, contents and in general \"new-uses\" "
-"created - even partially - from the open data published in the "
-"catalog.<br>\n"
-"You can report new apps and ideas referring to our <a "
-"href=\"{contacts_url}\">contacts</a>."
+"created - even partially - from the open data published in the catalog.<br>\n"
+"You can report new apps and ideas referring to our <a href="
+"\"{contacts_url}\">contacts</a>."
 msgstr ""
-"In questa pagina sono riportate le applicazioni, i contenuti e in generale i \"nuovi usi\" generati, anche solo in parte, dai dati aperti pubblicati sul catalogo.<br>\n"
-"Per segnalarne di nuovi è possibile fare riferimento ai contatti <a href=\"{contacts_url}\">riportati qui</a>."
+"In questa pagina sono riportate le applicazioni, i contenuti e in generale i "
+"\"nuovi usi\" generati, anche solo in parte, dai dati aperti pubblicati sul "
+"catalogo.<br>\n"
+"Per segnalarne di nuovi è possibile fare riferimento ai contatti <a href="
+"\"{contacts_url}\">riportati qui</a>."
 
 #: ckanext/datitrentinoit/templates/related/dashboard.html:57
 msgid "Filter Results"
-msgstr ""
+msgstr "Risultato del Filtro"
 
 #: ckanext/datitrentinoit/templates/related/dashboard.html:62
 msgid "Filter by type"
-msgstr ""
+msgstr "Filtra per tipo"
 
 #: ckanext/datitrentinoit/templates/related/dashboard.html:64
 msgid "All"
-msgstr ""
+msgstr "Tutti"
 
 #: ckanext/datitrentinoit/templates/related/dashboard.html:72
 msgid "Sort by"
-msgstr ""
+msgstr "Ordina per"
 
 #: ckanext/datitrentinoit/templates/related/dashboard.html:74
 msgid "Default"
-msgstr ""
+msgstr "Default"
 
 #: ckanext/datitrentinoit/templates/related/dashboard.html:84
 msgid "Only show featured items"
-msgstr ""
+msgstr "Mostra solo gli elementi in evidenza"
 
 #: ckanext/datitrentinoit/templates/related/dashboard.html:89
 msgid "Apply"
-msgstr ""
+msgstr "Richiedi"
 
 #: ckanext/datitrentinoit/templates/snippets/search_result_text.html:15
 msgid "{number} dataset found for \"{query}\""
@@ -469,7 +469,7 @@ msgstr "Spiacente, nessuna organizzazione trovata"
 
 #: ckanext/datitrentinoit/templates/user/new.html:3
 msgid "Register"
-msgstr "Registrati"
+msgstr "Iscriviti"
 
 #: ckanext/datitrentinoit/templates/user/new.html:6
 msgid "Registration"
@@ -481,12 +481,12 @@ msgstr "Registra un Account"
 
 #: ckanext/datitrentinoit/templates/user/new.html:22
 msgid "Why Sign Up?"
-msgstr "Perchè registrarsi?"
+msgstr "Perché iscriversi?"
 
 #: ckanext/datitrentinoit/templates/user/new.html:24
 msgid ""
-"To keep you up to date about the catalog activities and to follow updates"
-" about datasets you are interested in."
+"To keep you up to date about the catalog activities and to follow updates "
+"about datasets you are interested in."
 msgstr ""
 "Per restare aggiornati sulle attività nel catalogo e seguire gli "
 "aggiornamenti di dati d'interesse"
@@ -517,11 +517,10 @@ msgid ""
 "conditions</a> and that you have read our <a href=\"{pp_url}\">Privacy "
 "policy</a>."
 msgstr ""
-"Registrando un utente, acconsenti ai nostri <a href=\"{tc_url}\">Termini "
-"e condizioni</a> e dichiari di aver letto la nostra <a "
-"href=\"{pp_url}\">Informativa sulla Privacy</a>."
+"Registrando un utente, acconsenti ai nostri <a href=\"{tc_url}\">Termini e "
+"condizioni</a> e dichiari di aver letto la nostra <a href="
+"\"{pp_url}\">Informativa sulla Privacy</a>."
 
 #: ckanext/datitrentinoit/templates/user/new_user_form.html:30
 msgid "Create Account"
 msgstr "Crea un Account"
-
