@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-datitrentinoit 0.1.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-20 16:08+0100\n"
+"POT-Creation-Date: 2013-11-27 16:29+0100\n"
 "PO-Revision-Date: 2013-11-11 12:39+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en_GB <LL@li.org>\n"
@@ -32,8 +32,8 @@ msgid "Frequently Asked Questions"
 msgstr ""
 
 #: ckanext/datitrentinoit/templates/footer.html:22
-#: ckanext/datitrentinoit/templates/pages/acknowledgements.html:3
-#: ckanext/datitrentinoit/templates/pages/acknowledgements.html:7
+#: ckanext/datitrentinoit/templates/pages/acknowledgements.html:4
+#: ckanext/datitrentinoit/templates/pages/acknowledgements.html:8
 msgid "Acknowledgements"
 msgstr ""
 
@@ -57,7 +57,7 @@ msgstr ""
 msgid "Open Knowledge Foundation"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/footer.html:51
+#: ckanext/datitrentinoit/templates/footer.html:52
 msgid ""
 "<strong>Powered by</strong> <a class=\"hide-text ckan-footer-logo\" "
 "href=\"http://ckan.org\">CKAN</a>"
@@ -122,14 +122,8 @@ msgstr ""
 
 #: ckanext/datitrentinoit/templates/group/index.html:51
 msgid ""
-"\n"
-"        You can use CKAN Groups to create and manage collections of\n"
-"        datasets. This could be to catalogue datasets for a particular "
-"project\n"
-"        or team, or on a particular theme, or as a very simple way to "
-"help\n"
-"        people find and search your own published datasets.\n"
-"        "
+"Categories group datasets into specific homogeneous fields of economic "
+"and/or functional areas."
 msgstr ""
 
 #: ckanext/datitrentinoit/templates/group/snippets/group_form.html:10
@@ -400,6 +394,16 @@ msgstr ""
 msgid "Create Account"
 msgstr ""
 
-#~ msgid "See which are the most recent changes to datasets."
+#~ msgid ""
+#~ "\n"
+#~ "        You can use CKAN Groups to create and manage collections of\n"
+#~ "        datasets. This could be to "
+#~ "catalogue datasets for a particular "
+#~ "project\n"
+#~ "        or team, or on a "
+#~ "particular theme, or as a very "
+#~ "simple way to help\n"
+#~ "        people find and search your own published datasets.\n"
+#~ "        "
 #~ msgstr ""
 
