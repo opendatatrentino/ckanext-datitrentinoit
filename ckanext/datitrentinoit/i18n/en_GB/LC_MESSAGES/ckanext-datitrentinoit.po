@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-datitrentinoit 0.1.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-27 16:29+0100\n"
+"POT-Creation-Date: 2013-11-27 16:51+0100\n"
 "PO-Revision-Date: 2013-11-11 12:39+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en_GB <LL@li.org>\n"
@@ -258,6 +258,17 @@ msgstr ""
 msgid "Latest changes"
 msgstr ""
 
+#: ckanext/datitrentinoit/templates/organization/snippets/helper.html:4
+msgid "What are Organizations?"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/organization/snippets/helper.html:8
+msgid ""
+"An organization identify and collects information related to its "
+"institutional source.<br>\n"
+"Usually organizations are the data holder entities."
+msgstr ""
+
 #: ckanext/datitrentinoit/templates/package/base_form_page.html:5
 msgid "About datasets"
 msgstr ""
@@ -393,17 +404,4 @@ msgstr ""
 #: ckanext/datitrentinoit/templates/user/new_user_form.html:30
 msgid "Create Account"
 msgstr ""
-
-#~ msgid ""
-#~ "\n"
-#~ "        You can use CKAN Groups to create and manage collections of\n"
-#~ "        datasets. This could be to "
-#~ "catalogue datasets for a particular "
-#~ "project\n"
-#~ "        or team, or on a "
-#~ "particular theme, or as a very "
-#~ "simple way to help\n"
-#~ "        people find and search your own published datasets.\n"
-#~ "        "
-#~ msgstr ""
 
