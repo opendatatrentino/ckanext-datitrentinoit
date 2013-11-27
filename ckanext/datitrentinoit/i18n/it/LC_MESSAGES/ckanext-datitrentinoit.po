@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  CKAN\n"
 "Report-Msgid-Bugs-To: http://trac.ckan.org/\n"
-"POT-Creation-Date: 2013-11-27 17:05+0100\n"
-"PO-Revision-Date: 2013-11-27 17:07+0100\n"
+"POT-Creation-Date: 2013-11-27 17:31+0100\n"
+"PO-Revision-Date: 2013-11-27 17:23+0100\n"
 "Last-Translator: amercader <amercadero@gmail.com>\n"
 "Language-Team: Italian "
 "(http://www.transifex.com/projects/p/ckan/language/it/)\n"
@@ -130,11 +130,11 @@ msgstr "Informazioni sulle categorie"
 
 #: ckanext/datitrentinoit/templates/group/index.html:51
 msgid ""
-"Categories group datasets into specific homogeneous fields of economic and/"
-"or functional areas."
+"Categories group datasets into specific homogeneous fields of economic "
+"and/or functional areas."
 msgstr ""
-"Le categorie presentano i dataset entro specifici ambiti omogenei di settori "
-"economici e/o funzionali."
+"Le categorie presentano i dataset entro specifici ambiti omogenei di "
+"settori economici e/o funzionali."
 
 #: ckanext/datitrentinoit/templates/group/snippets/group_form.html:10
 msgid "Name"
@@ -279,12 +279,9 @@ msgstr "Cose sono le Organizzazioni?"
 #: ckanext/datitrentinoit/templates/organization/snippets/helper.html:8
 msgid ""
 "An organization identify and collects information related to its "
-"institutional source.<br>\n"
-"Usually organizations are the data holder entities."
-msgstr ""
-"Un'organizzazione individua e raccoglie le informazioni in relazione alla"
-" loro provenienza istituzionale.<br>\n"
-"Le organizzazioni sono solitamente le strutture titolari dei dati."
+"institutional source.<br>Usually organizations are the data holder "
+"entities."
+msgstr "Un'organizzazione individua e raccoglie le informazioni in relazione alla loro provenienza istituzionale.<br>Le organizzazioni sono solitamente le strutture titolari dei dati."
 
 #: ckanext/datitrentinoit/templates/package/base_form_page.html:5
 msgid "About datasets"
@@ -293,15 +290,17 @@ msgstr "A proposito dei dataset"
 #: ckanext/datitrentinoit/templates/package/base_form_page.html:8
 msgid ""
 "\n"
-"        A CKAN Dataset is a collection of data resources (such as files),\n"
-"        together with a description and other information, at a fixed URL.\n"
+"        A CKAN Dataset is a collection of data resources (such as files),"
+"\n"
+"        together with a description and other information, at a fixed "
+"URL.\n"
 "        Datasets are what users see when searching for data.\n"
 "        "
 msgstr ""
 "\n"
 "Un Dataset è una raccolta di sorgenti di dati (es. file), insieme a una "
-"descrizione e altre informazioni, a un preciso URL. I dataset sono quello "
-"che gli utenti vedono cercando dati."
+"descrizione e altre informazioni, a un preciso URL. I dataset sono quello"
+" che gli utenti vedono cercando dati."
 
 #: ckanext/datitrentinoit/templates/package/read.html:9
 msgid "Field"
@@ -369,41 +368,40 @@ msgstr "Cosa sono le applicazioni?"
 #: ckanext/datitrentinoit/templates/related/dashboard.html:51
 msgid ""
 "On this page are listed the apps, contents and in general \"new-uses\" "
-"created - even partially - from the open data published in the catalog.<br>\n"
-"You can report new apps and ideas referring to our <a href="
-"\"{contacts_url}\">contacts</a>."
+"created - even partially - from the open data published in the "
+"catalog.<br>You can report new apps and ideas referring to our <a "
+"href=\"{contacts_url}\">contacts</a>."
 msgstr ""
-"In questa pagina sono riportate le applicazioni, i contenuti e in generale i "
-"\"nuovi usi\" generati, anche solo in parte, dai dati aperti pubblicati sul "
-"catalogo.<br>\n"
-"Per segnalarne di nuovi è possibile fare riferimento ai contatti <a href="
-"\"{contacts_url}\">riportati qui</a>."
+"In questa pagina sono riportate le applicazioni, i contenuti e in "
+"generale i \"nuovi usi\" generati, anche solo in parte, dai dati aperti "
+"pubblicati sul catalogo.<br>Per segnalarne di nuovi è possibile fare "
+"riferimento ai contatti <a href=\"{contacts_url}\">riportati qui</a>."
 
-#: ckanext/datitrentinoit/templates/related/dashboard.html:57
+#: ckanext/datitrentinoit/templates/related/dashboard.html:56
 msgid "Filter Results"
 msgstr "Risultato del Filtro"
 
-#: ckanext/datitrentinoit/templates/related/dashboard.html:62
+#: ckanext/datitrentinoit/templates/related/dashboard.html:61
 msgid "Filter by type"
 msgstr "Filtra per tipo"
 
-#: ckanext/datitrentinoit/templates/related/dashboard.html:64
+#: ckanext/datitrentinoit/templates/related/dashboard.html:63
 msgid "All"
 msgstr "Tutti"
 
-#: ckanext/datitrentinoit/templates/related/dashboard.html:72
+#: ckanext/datitrentinoit/templates/related/dashboard.html:71
 msgid "Sort by"
 msgstr "Ordina per"
 
-#: ckanext/datitrentinoit/templates/related/dashboard.html:74
+#: ckanext/datitrentinoit/templates/related/dashboard.html:73
 msgid "Default"
 msgstr "Default"
 
-#: ckanext/datitrentinoit/templates/related/dashboard.html:84
+#: ckanext/datitrentinoit/templates/related/dashboard.html:83
 msgid "Only show featured items"
 msgstr "Mostra solo gli elementi in evidenza"
 
-#: ckanext/datitrentinoit/templates/related/dashboard.html:89
+#: ckanext/datitrentinoit/templates/related/dashboard.html:88
 msgid "Apply"
 msgstr "Richiedi"
 
@@ -485,8 +483,8 @@ msgstr "Perché iscriversi?"
 
 #: ckanext/datitrentinoit/templates/user/new.html:24
 msgid ""
-"To keep you up to date about the catalog activities and to follow updates "
-"about datasets you are interested in."
+"To keep you up to date about the catalog activities and to follow updates"
+" about datasets you are interested in."
 msgstr ""
 "Per restare aggiornati sulle attività nel catalogo e seguire gli "
 "aggiornamenti di dati d'interesse"
@@ -517,10 +515,11 @@ msgid ""
 "conditions</a> and that you have read our <a href=\"{pp_url}\">Privacy "
 "policy</a>."
 msgstr ""
-"Registrando un utente, acconsenti ai nostri <a href=\"{tc_url}\">Termini e "
-"condizioni</a> e dichiari di aver letto la nostra <a href="
-"\"{pp_url}\">Informativa sulla Privacy</a>."
+"Registrando un utente, acconsenti ai nostri <a href=\"{tc_url}\">Termini "
+"e condizioni</a> e dichiari di aver letto la nostra <a "
+"href=\"{pp_url}\">Informativa sulla Privacy</a>."
 
 #: ckanext/datitrentinoit/templates/user/new_user_form.html:30
 msgid "Create Account"
 msgstr "Crea un Account"
+
