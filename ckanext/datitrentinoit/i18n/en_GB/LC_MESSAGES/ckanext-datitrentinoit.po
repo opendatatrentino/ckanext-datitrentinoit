@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-datitrentinoit 0.1.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-27 16:58+0100\n"
+"POT-Creation-Date: 2013-11-27 17:05+0100\n"
 "PO-Revision-Date: 2013-11-11 12:39+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en_GB <LL@li.org>\n"
@@ -312,6 +312,74 @@ msgstr ""
 
 #: ckanext/datitrentinoit/templates/package/snippets/package_form.html:45
 msgid "Next: Add Data"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/related/dashboard.html:6
+#: ckanext/datitrentinoit/templates/related/dashboard.html:9
+#: ckanext/datitrentinoit/templates/related/dashboard.html:16
+msgid "Apps & Ideas"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/related/dashboard.html:21
+#, python-format
+msgid ""
+"\n"
+"            <p>Showing items <strong>%(first)s - %(last)s</strong> of "
+"<strong>%(item_count)s</strong> related items found</p>\n"
+"          "
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/related/dashboard.html:25
+#, python-format
+msgid ""
+"\n"
+"            <p><strong>%(item_count)s</strong> related items found</p>\n"
+"          "
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/related/dashboard.html:29
+msgid "There have been no apps submitted yet."
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/related/dashboard.html:48
+msgid "What are applications?"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/related/dashboard.html:51
+msgid ""
+"On this page are listed the apps, contents and in general \"new-uses\" "
+"created - even partially - from the open data published in the "
+"catalog.<br>\n"
+"You can report new apps and ideas referring to our <a "
+"href=\"{contacts_url}\">contacts</a>."
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/related/dashboard.html:57
+msgid "Filter Results"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/related/dashboard.html:62
+msgid "Filter by type"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/related/dashboard.html:64
+msgid "All"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/related/dashboard.html:72
+msgid "Sort by"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/related/dashboard.html:74
+msgid "Default"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/related/dashboard.html:84
+msgid "Only show featured items"
+msgstr ""
+
+#: ckanext/datitrentinoit/templates/related/dashboard.html:89
+msgid "Apply"
 msgstr ""
 
 #: ckanext/datitrentinoit/templates/snippets/search_result_text.html:15
