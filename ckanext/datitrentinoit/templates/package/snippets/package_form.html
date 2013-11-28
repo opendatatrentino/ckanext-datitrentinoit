@@ -25,12 +25,8 @@ then itself be extended to add/remove blocks of functionality. #}
     <div class="form-actions">
       {% block disclaimer %}
         <p class="action-info small">
-          {# {%- trans -%} #}
-          {# Important: By submitting content, you #}
-          {# agree to release your contributions under the Open Database #}
-          {# License. #}
-          {# {%- endtrans -%} #}
-	  {{ _('Important: by submitting content, you agree to our <a href="{tc_url}">Terms and conditions</a>.').format(tc_url=h.url_for(controller='ckanext.datitrentinoit.plugin:DatiTrentinoController', action='legal_notes'))|safe }}
+	  {% set tc_url = h.url_for(controller='ckanext.datitrentinoit.plugin:DatiTrentinoController', action='legal_notes') %}
+	  {% trans %}Important: by submitting content, you agree to our <a href="{tc_url}">Legal notes</a>.{% endtrans %}
         </p>
       {% endblock %}
       {% block delete_button %}

@@ -15,8 +15,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  CKAN\n"
 "Report-Msgid-Bugs-To: http://trac.ckan.org/\n"
-"POT-Creation-Date: 2013-11-27 17:31+0100\n"
-"PO-Revision-Date: 2013-11-27 17:23+0100\n"
+"POT-Creation-Date: 2013-11-28 16:34+0100\n"
+"PO-Revision-Date: 2013-11-28 16:40+0100\n"
 "Last-Translator: amercader <amercadero@gmail.com>\n"
 "Language-Team: Italian "
 "(http://www.transifex.com/projects/p/ckan/language/it/)\n"
@@ -178,7 +178,7 @@ msgid "Are you sure you want to delete this Group?"
 msgstr "Sei sicuro di voler cancellare questo Gruppo?"
 
 #: ckanext/datitrentinoit/templates/group/snippets/group_form.html:77
-#: ckanext/datitrentinoit/templates/package/snippets/package_form.html:39
+#: ckanext/datitrentinoit/templates/package/snippets/package_form.html:35
 msgid "Delete"
 msgstr "Elimina"
 
@@ -281,7 +281,10 @@ msgid ""
 "An organization identify and collects information related to its "
 "institutional source.<br>Usually organizations are the data holder "
 "entities."
-msgstr "Un'organizzazione individua e raccoglie le informazioni in relazione alla loro provenienza istituzionale.<br>Le organizzazioni sono solitamente le strutture titolari dei dati."
+msgstr ""
+"Un'organizzazione individua e raccoglie le informazioni in relazione alla"
+" loro provenienza istituzionale.<br>Le organizzazioni sono solitamente le"
+" strutture titolari dei dati."
 
 #: ckanext/datitrentinoit/templates/package/base_form_page.html:5
 msgid "About datasets"
@@ -314,23 +317,21 @@ msgstr "Valore"
 msgid "Add Dataset"
 msgstr "Aggiungi un dataset"
 
-#: ckanext/datitrentinoit/templates/package/snippets/package_form.html:33
+#: ckanext/datitrentinoit/templates/package/snippets/package_form.html:29
 msgid ""
 "Important: by submitting content, you agree to our <a "
-"href=\"{tc_url}\">Terms and conditions</a>."
-msgstr ""
-"Importante: con l'invio di contenuti, dichiari di approvare i nostri <a "
-"href=\"{tc_url}\">Termini e condizioni</a>."
+"href=\"{tc_url}\">Legal notes</a>."
+msgstr "Importante: con l'invio di contenuti confermi di aver preso visione e conformarti alle <a href=\"{tc_url}\">Note Legali del Portale</a>."
 
-#: ckanext/datitrentinoit/templates/package/snippets/package_form.html:38
+#: ckanext/datitrentinoit/templates/package/snippets/package_form.html:34
 msgid "Are you sure you want to delete this dataset?"
 msgstr "Sei sicuro di voler eliminare questo dataset?"
 
-#: ckanext/datitrentinoit/templates/package/snippets/package_form.html:43
+#: ckanext/datitrentinoit/templates/package/snippets/package_form.html:39
 msgid "Cancel"
 msgstr "Annulla"
 
-#: ckanext/datitrentinoit/templates/package/snippets/package_form.html:45
+#: ckanext/datitrentinoit/templates/package/snippets/package_form.html:41
 msgid "Next: Add Data"
 msgstr "Prossimo: Aggiungi Dati"
 
@@ -509,17 +510,14 @@ msgstr "Password"
 msgid "Confirm"
 msgstr "Conferma"
 
-#: ckanext/datitrentinoit/templates/user/new_user_form.html:26
+#: ckanext/datitrentinoit/templates/user/new_user_form.html:29
 msgid ""
-"By registering a user, you agree to our <a href=\"{tc_url}\">Terms and "
-"conditions</a> and that you have read our <a href=\"{pp_url}\">Privacy "
+"By registering a user, you confirm you read our <a "
+"href=\"{tc_url}\">Legal notes</a> and <a href=\"{pp_url}\">Privacy "
 "policy</a>."
-msgstr ""
-"Registrando un utente, acconsenti ai nostri <a href=\"{tc_url}\">Termini "
-"e condizioni</a> e dichiari di aver letto la nostra <a "
-"href=\"{pp_url}\">Informativa sulla Privacy</a>."
+msgstr "Registrandoti come utente confermi di aver letto le <a href=\"{tc_url}\">Note Legali del Portale</a> e l'<a href=\"{pp_url}\">Informativa sulla Privacy</a>."
 
-#: ckanext/datitrentinoit/templates/user/new_user_form.html:30
+#: ckanext/datitrentinoit/templates/user/new_user_form.html:33
 msgid "Create Account"
 msgstr "Crea un Account"
 

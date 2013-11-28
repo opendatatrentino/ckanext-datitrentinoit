@@ -22,8 +22,11 @@
     </div>
   {% endif %}
 
+{% set tc_url=h.url_for(controller='ckanext.datitrentinoit.plugin:DatiTrentinoController', action='legal_notes') %}
+{% set pp_url=h.url_for(controller='ckanext.datitrentinoit.plugin:DatiTrentinoController', action='privacy') %}
+
   <p>
-    {{ _('By registering a user, you agree to our <a href="{tc_url}">Terms and conditions</a> and that you have read our <a href="{pp_url}">Privacy policy</a>.').format(tc_url=h.url_for(controller='ckanext.datitrentinoit.plugin:DatiTrentinoController', action='legal_notes'), pp_url=h.url_for(controller='ckanext.datitrentinoit.plugin:DatiTrentinoController', action='privacy'))|safe }}
+{% trans %}By registering a user, you confirm you read our <a href="{tc_url}">Legal notes</a> and <a href="{pp_url}">Privacy policy</a>.{% endtrans %}
   </p>
 
   <div class="form-actions">
