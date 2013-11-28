@@ -97,36 +97,40 @@ class DatiTrentinoFormPlugin(SingletonPlugin,
     implements(ITemplateHelpers)
 
     _custom_text_fields = OrderedDict([
-        ('Aggiornamento', {
-            'form_help': "es. mensile, giornaliero, annuale",
-        }),
         ('Titolare', {
             'form_help': "es. Provincia Autonoma di Trento",
         }),
-        ('Codifica Caratteri', {
-            'form_help': "es. utf-8",
-        }),
-        ('Copertura Temporale (Data di fine)', {
-            'form_help': "giorno/mese/anno",
-        }),
-        ('Copertura Temporale (Data di inizio)', {
-            'form_help': "giorno/mese/anno",
+        ('Descrizione campi', {
+            'form_help': "",
         }),
         ('Copertura Geografica', {
             'form_help': "es. Comune di Trento",
         }),
-        ('Data di aggiornamento', {
+        ('Copertura Temporale (Data di inizio)', {
             'form_help': "giorno/mese/anno",
         }),
+        ('Copertura Temporale (Data di fine)', {
+            'form_help': "giorno/mese/anno",
+        }),
+        ('Aggiornamento', {
+            'form_help': "es. mensile, giornaliero, annuale",
+        }),
+
         ('Data di creazione', {
             'form_help': "giorno/mese/anno",
         }),
         ('Data di pubblicazione', {
             'form_help': "giorno/mese/anno",
         }),
-        ('Descrizione campi', {
-            'form_help': "",
+        ('Data di aggiornamento', {
+            'form_help': "giorno/mese/anno",
         }),
+
+        ('Codifica Caratteri', {
+            'form_help': "Inserire il charset usato nel dataset. "
+            "Ad esempio: utf-8, latin-1, pc-850.",
+        }),
+
         ('URL sito', {
             'form_help': "",
         }),
