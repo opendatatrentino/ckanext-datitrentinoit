@@ -25,6 +25,27 @@ won't work. #}
         value=data[field_name],
         error=errors[field_name],
         classes=['control-full']) }}
+
+  <div>
+<p>Se non specificato nella descrizione del dataset o nella "Documentazione tecnica", è necessario descrivere in questo metadato i campi (attributi) delle informazioni contenute nel dataset. Nel caso di dato tabellare, gli attributi corrispondono alle colonne della tabella. Le informazioni da specificare includono:</p>
+
+<dl>
+<dt>Nome completo</dt>
+<dd>E' il nome che viene mostrato all'utente quando consulta il dataset (es. "Descrizione")</dd>
+<dt>Nome breve</dt>
+<dd>E' il nome dell’attributo utilizzato nel dataset, normalmente un'abbreviazione del nome completo (es."Desc")</dd>
+<dt>Descrizione</dt>
+<dd>Illustra il significato del campo, eventuali relazioni con altri dataset, come il campo è stato generato, etc. (es. "Codice ISTAT del comune amministrativo")</dd>
+<dt>Tipologia dell'attributo</dt>
+<dd>testo, numero, data, etc.</dd>
+<dt>Formato dell'attributo</dt>
+<dd>Ad esempio unità di misura o struttura della data</dd>
+<dt>Valori ammessi</dt>
+<dd>Rappresenta il dominio del attributo e ne contiene, ove necessario, la decodifica (es. "Il codice assume valori che vanno da 1 a 223, numero dei comuni totali della Provincia Autonoma di Trento") </dd>
+</dl>
+
+</div>
+
 {% else %}
     {{ form.input(field_name,
         label=field_name,
