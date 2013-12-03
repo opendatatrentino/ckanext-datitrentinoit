@@ -369,8 +369,7 @@ class DatiTrentinoFormPlugin(SingletonPlugin,
         }),
 
         ('Codifica Caratteri', {
-            'form_help': "Inserire il charset usato nel dataset. "
-            "Ad esempio: utf-8, latin-1, pc-850.",
+            'form_help': "Esempio: utf-8, latin-1, pc-850.",
         }),
 
         ('URL sito', {
