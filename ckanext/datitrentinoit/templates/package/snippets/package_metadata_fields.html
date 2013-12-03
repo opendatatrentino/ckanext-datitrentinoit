@@ -17,6 +17,15 @@ won't work. #}
 {% set custom_fields = h.dti_get_custom_fields() %}
 
 {% for field_name, field in custom_fields.iteritems() %}
+{% if field_name == 'Descrizione campi' %}
+    {{ form.textarea(field_name,
+        label=field_name,
+        id='field-' + field_name.replace(' ', '-'),
+        placeholder=field.form_help,
+        value=data[field_name],
+        error=errors[field_name],
+        classes=['control-full']) }}
+{% else %}
     {{ form.input(field_name,
         label=field_name,
         id='field-' + field_name.replace(' ', '-'),
@@ -24,6 +33,7 @@ won't work. #}
         value=data[field_name],
         error=errors[field_name],
         classes=['control-medium']) }}
+{% endif %}
 {% endfor %}
 
 <hr>

@@ -2,6 +2,11 @@
 
 
 {% block package_additional_info %}
+  <h2>Descrizione dei campi</h2>
+  <div class="">
+    {{ h.render_markdown(pkg.get('Descrizione campi')) }}
+  </div>
+
   <h2>Metadati del dataset</h2>
   <table class="table table-striped table-bordered table-condensed">
     <thead>
@@ -12,10 +17,12 @@
     </thead>
     <tbody>
       {% for key, field in h.dti_get_custom_fields().iteritems() %}
+	{% if key != 'Descrizione campi' %}
 	<tr>
 	  <th>{{ key }}</th>
 	  <td>{{ pkg.get(key, 'N/A') }}</td>
 	</tr>
+	{% endif %}
       {% endfor %}
     </tbody>
 </table>
@@ -26,8 +33,6 @@
 
 {% block package_description %}
   {{ super() }}
-
-{# <p><strong>License:</strong> {{ pkg.license_id }}</p> #}
 
 {% if pkg.license_id == 'cc-by' %}
 <div class="well">
