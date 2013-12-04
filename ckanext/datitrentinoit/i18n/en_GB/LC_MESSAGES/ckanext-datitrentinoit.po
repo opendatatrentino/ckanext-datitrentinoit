@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ckanext-datitrentinoit 0.1.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-11-28 17:41+0100\n"
+"POT-Creation-Date: 2013-12-04 11:43+0100\n"
 "PO-Revision-Date: 2013-11-11 12:39+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en_GB <LL@li.org>\n"
@@ -275,20 +275,16 @@ msgstr ""
 
 #: ckanext/datitrentinoit/templates/package/base_form_page.html:8
 msgid ""
-"\n"
-"        A CKAN Dataset is a collection of data resources (such as files),"
-"\n"
-"        together with a description and other information, at a fixed "
-"URL.\n"
-"        Datasets are what users see when searching for data.\n"
-"        "
+"A CKAN Dataset is a collection of data resources (such as files), "
+"together with a description and other information, at a fixed "
+"URL.<br>Datasets are what users see when searching for data."
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/package/read.html:9
+#: ckanext/datitrentinoit/templates/package/read.html:14
 msgid "Field"
 msgstr ""
 
-#: ckanext/datitrentinoit/templates/package/read.html:10
+#: ckanext/datitrentinoit/templates/package/read.html:15
 msgid "Value"
 msgstr ""
 
@@ -501,4 +497,16 @@ msgstr ""
 #: ckanext/datitrentinoit/templates/user/new_user_form.html:33
 msgid "Create Account"
 msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "        A CKAN Dataset is a "
+#~ "collection of data resources (such as"
+#~ " files),\n"
+#~ "        together with a description and"
+#~ " other information, at a fixed URL."
+#~ "\n"
+#~ "        Datasets are what users see when searching for data.\n"
+#~ "        "
+#~ msgstr ""
 
