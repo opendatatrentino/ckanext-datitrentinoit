@@ -26,7 +26,7 @@
 {% set pp_url=h.url_for(controller='ckanext.datitrentinoit.plugin:DatiTrentinoController', action='privacy') %}
 
   <p>
-{% trans %}By registering a user, you confirm you read our <a href="{tc_url}">Legal notes</a> and <a href="{pp_url}">Privacy policy</a>.{% endtrans %}
+{% trans %}By registering a user, you confirm you read our <a href="{{tc_url}}">Legal notes</a> and <a href="{{pp_url}}">Privacy policy</a>.{% endtrans %}
   </p>
 
   <div class="form-actions">
