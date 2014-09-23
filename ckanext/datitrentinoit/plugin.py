@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-## Plugin for http://dati.trentino.it
-## Ckan: 2.2a
+# Plugin for http://dati.trentino.it
+# Ckan: 2.2a
 
 try:
     from collections import OrderedDict
@@ -17,7 +17,7 @@ import routes.mapper as routes_mapper
 
 
 static_pages = ['faq', 'acknowledgements', 'legal_notes', 'privacy']
-#static_pages = ['faq', 'acknowledgements']
+# static_pages = ['faq', 'acknowledgements']
 
 GEO_AREAS = [
     u"Ala",
@@ -267,16 +267,16 @@ class DatiTrentinoPlugin(SingletonPlugin):
     implements(IRoutes)
     implements(ITemplateHelpers)
 
-    ## Implementation of IConfigurer :(
-    ##------------------------------------------------------------
+    # Implementation of IConfigurer :(
+    # ------------------------------------------------------------
 
     def update_config(self, config):
         plugins_toolkit.add_public_directory(config, 'public')
         plugins_toolkit.add_template_directory(config, 'templates')
         plugins_toolkit.add_resource('fanstatic', 'ckanext-datitrentinoit')
 
-    ## Implementation of IConfigurable :(
-    ##------------------------------------------------------------
+    # Implementation of IConfigurable :(
+    # ------------------------------------------------------------
 
     def configure(self, config):
         self.ga_conf = {
@@ -284,8 +284,8 @@ class DatiTrentinoPlugin(SingletonPlugin):
             'domain': config.get('googleanalytics.domain'),
         }
 
-    ## Implementation of IRoutes :(
-    ##------------------------------------------------------------
+    # Implementation of IRoutes :(
+    # ------------------------------------------------------------
 
     def before_map(self, routes):
         controller = 'ckanext.datitrentinoit.plugin:DatiTrentinoController'
@@ -298,8 +298,8 @@ class DatiTrentinoPlugin(SingletonPlugin):
     def after_map(self, routes):
         return routes
 
-    ## Implementation of ITemplateHelpers :(
-    ##------------------------------------------------------------
+    # Implementation of ITemplateHelpers :(
+    # ------------------------------------------------------------
 
     def get_helpers(self):
         return {
@@ -418,7 +418,7 @@ class DatiTrentinoFormPlugin(SingletonPlugin,
 
     def show_package_schema(self):
         schema = super(DatiTrentinoFormPlugin, self).show_package_schema()
-        ## todo: Do not remove custom fields from extras when rendering!
-        ## but this is used when loading the model too...
+        # todo: Do not remove custom fields from extras when rendering!
+        # but this is used when loading the model too...
         self._modify_package_schema_for_read(schema)
         return schema
